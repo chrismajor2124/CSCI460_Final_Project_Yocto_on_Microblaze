@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/w63j839/Documents/Coursework/CSCI460/CSCI460_Final_Project/basys_linux/basys_linux.runs/impl_1'
+HD_PWD='C:/Users/Chris Major/Documents/MSU/Classes/CSCI460/CSCI460_Final_Project_Yocto_on_Microblaze/basys_linux/basys_linux.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

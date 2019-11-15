@@ -67,19 +67,18 @@ set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 2
   create_project -in_memory -part xc7a35tcpg236-1
-  set_property board_part_repo_paths {C:/Xilinx/Vivado/2019.1/data/boards/board_files} [current_project]
   set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/w63j839/Documents/Coursework/CSCI460/CSCI460_Final_Project/basys_linux/basys_linux.cache/wt [current_project]
-  set_property parent.project_path C:/Users/w63j839/Documents/Coursework/CSCI460/CSCI460_Final_Project/basys_linux/basys_linux.xpr [current_project]
-  set_property ip_output_repo C:/Users/w63j839/Documents/Coursework/CSCI460/CSCI460_Final_Project/basys_linux/basys_linux.cache/ip [current_project]
+  set_property webtalk.parent_dir {C:/Users/Chris Major/Documents/MSU/Classes/CSCI460/CSCI460_Final_Project_Yocto_on_Microblaze/basys_linux/basys_linux.cache/wt} [current_project]
+  set_property parent.project_path {C:/Users/Chris Major/Documents/MSU/Classes/CSCI460/CSCI460_Final_Project_Yocto_on_Microblaze/basys_linux/basys_linux.xpr} [current_project]
+  set_property ip_output_repo {{C:/Users/Chris Major/Documents/MSU/Classes/CSCI460/CSCI460_Final_Project_Yocto_on_Microblaze/basys_linux/basys_linux.cache/ip}} [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
-  add_files -quiet C:/Users/w63j839/Documents/Coursework/CSCI460/CSCI460_Final_Project/basys_linux/basys_linux.runs/synth_1/microblaze_wrapper.dcp
+  add_files -quiet {{C:/Users/Chris Major/Documents/MSU/Classes/CSCI460/CSCI460_Final_Project_Yocto_on_Microblaze/basys_linux/basys_linux.runs/synth_1/microblaze_wrapper.dcp}}
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files C:/Users/w63j839/Documents/Coursework/CSCI460/CSCI460_Final_Project/basys_linux/basys_linux.srcs/sources_1/bd/microblaze/microblaze.bd
+  add_files {{C:/Users/Chris Major/Documents/MSU/Classes/CSCI460/CSCI460_Final_Project_Yocto_on_Microblaze/basys_linux/basys_linux.srcs/sources_1/bd/microblaze/microblaze.bd}}
   set_param project.isImplRun false
   set_param project.isImplRun true
   link_design -top microblaze_wrapper -part xc7a35tcpg236-1
@@ -172,26 +171,6 @@ if {$rc} {
   return -code error $RESULT
 } else {
   end_step route_design
-  unset ACTIVE_STEP 
-}
-
-start_step write_bitstream
-set ACTIVE_STEP write_bitstream
-set rc [catch {
-  create_msg_db write_bitstream.pb
-  set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
-  catch { write_mem_info -force microblaze_wrapper.mmi }
-  catch { write_bmm -force microblaze_wrapper_bd.bmm }
-  write_bitstream -force microblaze_wrapper.bit 
-  catch {write_debug_probes -quiet -force microblaze_wrapper}
-  catch {file copy -force microblaze_wrapper.ltx debug_nets.ltx}
-  close_msg_db -file write_bitstream.pb
-} RESULT]
-if {$rc} {
-  step_failed write_bitstream
-  return -code error $RESULT
-} else {
-  end_step write_bitstream
   unset ACTIVE_STEP 
 }
 
