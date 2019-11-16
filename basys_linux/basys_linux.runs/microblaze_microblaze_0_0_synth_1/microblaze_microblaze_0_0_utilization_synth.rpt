@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Wed Nov 13 16:56:02 2019
+| Date         : Fri Nov 15 16:35:59 2019
 | Host         : BZ-ECE-CB539-02 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file microblaze_microblaze_0_0_utilization_synth.rpt -pb microblaze_microblaze_0_0_utilization_synth.pb
 | Design       : microblaze_microblaze_0_0
@@ -30,13 +30,13 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Fixed | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| Slice LUTs*                | 4303 |     0 |     20800 | 20.69 |
-|   LUT as Logic             | 3920 |     0 |     20800 | 18.85 |
+| Slice LUTs*                | 4263 |     0 |     20800 | 20.50 |
+|   LUT as Logic             | 3880 |     0 |     20800 | 18.65 |
 |   LUT as Memory            |  383 |     0 |      9600 |  3.99 |
 |     LUT as Distributed RAM |  108 |     0 |           |       |
 |     LUT as Shift Register  |  275 |     0 |           |       |
-| Slice Registers            | 4508 |     0 |     41600 | 10.84 |
-|   Register as Flip Flop    | 4506 |     0 |     41600 | 10.83 |
+| Slice Registers            | 4467 |     0 |     41600 | 10.74 |
+|   Register as Flip Flop    | 4465 |     0 |     41600 | 10.73 |
 |   Register as Latch        |    0 |     0 |     41600 |  0.00 |
 |   Register as AND/OR       |    2 |     0 |     41600 | <0.01 |
 | F7 Muxes                   |  153 |     0 |     16300 |  0.94 |
@@ -60,7 +60,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 149   |          Yes |           - |        Reset |
 | 140   |          Yes |         Set |            - |
-| 4217  |          Yes |       Reset |            - |
+| 4176  |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -70,9 +70,9 @@ Table of Contents
 +-------------------+------+-------+-----------+-------+
 |     Site Type     | Used | Fixed | Available | Util% |
 +-------------------+------+-------+-----------+-------+
-| Block RAM Tile    |   20 |     0 |        50 | 40.00 |
-|   RAMB36/FIFO*    |   20 |     0 |        50 | 40.00 |
-|     RAMB36E1 only |   20 |       |           |       |
+| Block RAM Tile    |   19 |     0 |        50 | 38.00 |
+|   RAMB36/FIFO*    |   19 |     0 |        50 | 38.00 |
+|     RAMB36E1 only |   19 |       |           |       |
 |   RAMB18          |    0 |     0 |       100 |  0.00 |
 +-------------------+------+-------+-----------+-------+
 * Note: Each Block RAM Tile only has one FIFO logic available and therefore can accommodate only one FIFO36E1 or one FIFO18E1. However, if a FIFO18E1 occupies a Block RAM Tile, that tile can still accommodate a RAMB18E1
@@ -154,13 +154,13 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     | 4217 |        Flop & Latch |
-| LUT6     | 1688 |                 LUT |
-| LUT5     |  936 |                 LUT |
-| LUT3     |  818 |                 LUT |
-| LUT4     |  675 |                 LUT |
-| LUT2     |  342 |                 LUT |
-| CARRY4   |  231 |          CarryLogic |
+| FDRE     | 4176 |        Flop & Latch |
+| LUT6     | 1698 |                 LUT |
+| LUT5     |  912 |                 LUT |
+| LUT3     |  766 |                 LUT |
+| LUT4     |  681 |                 LUT |
+| LUT2     |  355 |                 LUT |
+| CARRY4   |  221 |          CarryLogic |
 | SRL16E   |  194 |  Distributed Memory |
 | MUXF7    |  153 |               MuxFx |
 | FDCE     |  149 |        Flop & Latch |
@@ -171,7 +171,7 @@ Table of Contents
 | RAMD64E  |   44 |  Distributed Memory |
 | SRLC32E  |   33 |  Distributed Memory |
 | RAMS32   |   32 |  Distributed Memory |
-| RAMB36E1 |   20 |        Block Memory |
+| RAMB36E1 |   19 |        Block Memory |
 | DSP48E1  |    6 |    Block Arithmetic |
 | AND2B1L  |    2 |              Others |
 +----------+------+---------------------+

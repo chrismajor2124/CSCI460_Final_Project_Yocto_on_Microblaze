@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
--- Date        : Wed Nov 13 16:49:53 2019
+-- Date        : Wed Nov 13 16:49:50 2019
 -- Host        : BZ-ECE-CB539-02 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               c:/Users/w63j839/Documents/Coursework/CSCI460/CSCI460_Final_Project/basys_linux/basys_linux.srcs/sources_1/bd/microblaze/ip/microblaze_auto_pc_1/microblaze_auto_pc_1_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top microblaze_auto_pc_1 -prefix
+--               microblaze_auto_pc_1_ microblaze_auto_pc_1_stub.vhdl
 -- Design      : microblaze_auto_pc_1
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7a35tcpg236-1

@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-//Date        : Wed Nov 13 16:46:27 2019
+//Date        : Fri Nov 15 16:28:41 2019
 //Host        : BZ-ECE-CB539-02 running 64-bit major release  (build 9200)
 //Command     : generate_target microblaze_wrapper.bd
 //Design      : microblaze_wrapper
@@ -10,20 +10,15 @@
 `timescale 1 ps / 1 ps
 
 module microblaze_wrapper
-   (eth_ref_clk,
+   (ja_0_pin10_io,
+    ja_0_pin1_io,
+    ja_0_pin2_io,
+    ja_0_pin3_io,
+    ja_0_pin4_io,
+    ja_0_pin7_io,
+    ja_0_pin8_io,
+    ja_0_pin9_io,
     led_16bits_tri_o,
-    mdio_rtl_mdc,
-    mdio_rtl_mdio_io,
-    mii_rtl_col,
-    mii_rtl_crs,
-    mii_rtl_rst_n,
-    mii_rtl_rx_clk,
-    mii_rtl_rx_dv,
-    mii_rtl_rx_er,
-    mii_rtl_rxd,
-    mii_rtl_tx_clk,
-    mii_rtl_tx_en,
-    mii_rtl_txd,
     push_buttons_4bits_tri_i,
     qspi_flash_io0_io,
     qspi_flash_io1_io,
@@ -34,20 +29,15 @@ module microblaze_wrapper
     sys_clock,
     usb_uart_rxd,
     usb_uart_txd);
-  output eth_ref_clk;
+  inout ja_0_pin10_io;
+  inout ja_0_pin1_io;
+  inout ja_0_pin2_io;
+  inout ja_0_pin3_io;
+  inout ja_0_pin4_io;
+  inout ja_0_pin7_io;
+  inout ja_0_pin8_io;
+  inout ja_0_pin9_io;
   output [15:0]led_16bits_tri_o;
-  output mdio_rtl_mdc;
-  inout mdio_rtl_mdio_io;
-  input mii_rtl_col;
-  input mii_rtl_crs;
-  output mii_rtl_rst_n;
-  input mii_rtl_rx_clk;
-  input mii_rtl_rx_dv;
-  input mii_rtl_rx_er;
-  input [3:0]mii_rtl_rxd;
-  input mii_rtl_tx_clk;
-  output mii_rtl_tx_en;
-  output [3:0]mii_rtl_txd;
   input [3:0]push_buttons_4bits_tri_i;
   inout qspi_flash_io0_io;
   inout qspi_flash_io1_io;
@@ -59,23 +49,39 @@ module microblaze_wrapper
   input usb_uart_rxd;
   output usb_uart_txd;
 
-  wire eth_ref_clk;
+  wire ja_0_pin10_i;
+  wire ja_0_pin10_io;
+  wire ja_0_pin10_o;
+  wire ja_0_pin10_t;
+  wire ja_0_pin1_i;
+  wire ja_0_pin1_io;
+  wire ja_0_pin1_o;
+  wire ja_0_pin1_t;
+  wire ja_0_pin2_i;
+  wire ja_0_pin2_io;
+  wire ja_0_pin2_o;
+  wire ja_0_pin2_t;
+  wire ja_0_pin3_i;
+  wire ja_0_pin3_io;
+  wire ja_0_pin3_o;
+  wire ja_0_pin3_t;
+  wire ja_0_pin4_i;
+  wire ja_0_pin4_io;
+  wire ja_0_pin4_o;
+  wire ja_0_pin4_t;
+  wire ja_0_pin7_i;
+  wire ja_0_pin7_io;
+  wire ja_0_pin7_o;
+  wire ja_0_pin7_t;
+  wire ja_0_pin8_i;
+  wire ja_0_pin8_io;
+  wire ja_0_pin8_o;
+  wire ja_0_pin8_t;
+  wire ja_0_pin9_i;
+  wire ja_0_pin9_io;
+  wire ja_0_pin9_o;
+  wire ja_0_pin9_t;
   wire [15:0]led_16bits_tri_o;
-  wire mdio_rtl_mdc;
-  wire mdio_rtl_mdio_i;
-  wire mdio_rtl_mdio_io;
-  wire mdio_rtl_mdio_o;
-  wire mdio_rtl_mdio_t;
-  wire mii_rtl_col;
-  wire mii_rtl_crs;
-  wire mii_rtl_rst_n;
-  wire mii_rtl_rx_clk;
-  wire mii_rtl_rx_dv;
-  wire mii_rtl_rx_er;
-  wire [3:0]mii_rtl_rxd;
-  wire mii_rtl_tx_clk;
-  wire mii_rtl_tx_en;
-  wire [3:0]mii_rtl_txd;
   wire [3:0]push_buttons_4bits_tri_i;
   wire qspi_flash_io0_i;
   wire qspi_flash_io0_io;
@@ -102,28 +108,72 @@ module microblaze_wrapper
   wire usb_uart_rxd;
   wire usb_uart_txd;
 
-  IOBUF mdio_rtl_mdio_iobuf
-       (.I(mdio_rtl_mdio_o),
-        .IO(mdio_rtl_mdio_io),
-        .O(mdio_rtl_mdio_i),
-        .T(mdio_rtl_mdio_t));
+  IOBUF ja_0_pin10_iobuf
+       (.I(ja_0_pin10_o),
+        .IO(ja_0_pin10_io),
+        .O(ja_0_pin10_i),
+        .T(ja_0_pin10_t));
+  IOBUF ja_0_pin1_iobuf
+       (.I(ja_0_pin1_o),
+        .IO(ja_0_pin1_io),
+        .O(ja_0_pin1_i),
+        .T(ja_0_pin1_t));
+  IOBUF ja_0_pin2_iobuf
+       (.I(ja_0_pin2_o),
+        .IO(ja_0_pin2_io),
+        .O(ja_0_pin2_i),
+        .T(ja_0_pin2_t));
+  IOBUF ja_0_pin3_iobuf
+       (.I(ja_0_pin3_o),
+        .IO(ja_0_pin3_io),
+        .O(ja_0_pin3_i),
+        .T(ja_0_pin3_t));
+  IOBUF ja_0_pin4_iobuf
+       (.I(ja_0_pin4_o),
+        .IO(ja_0_pin4_io),
+        .O(ja_0_pin4_i),
+        .T(ja_0_pin4_t));
+  IOBUF ja_0_pin7_iobuf
+       (.I(ja_0_pin7_o),
+        .IO(ja_0_pin7_io),
+        .O(ja_0_pin7_i),
+        .T(ja_0_pin7_t));
+  IOBUF ja_0_pin8_iobuf
+       (.I(ja_0_pin8_o),
+        .IO(ja_0_pin8_io),
+        .O(ja_0_pin8_i),
+        .T(ja_0_pin8_t));
+  IOBUF ja_0_pin9_iobuf
+       (.I(ja_0_pin9_o),
+        .IO(ja_0_pin9_io),
+        .O(ja_0_pin9_i),
+        .T(ja_0_pin9_t));
   microblaze microblaze_i
-       (.eth_ref_clk(eth_ref_clk),
+       (.ja_0_pin10_i(ja_0_pin10_i),
+        .ja_0_pin10_o(ja_0_pin10_o),
+        .ja_0_pin10_t(ja_0_pin10_t),
+        .ja_0_pin1_i(ja_0_pin1_i),
+        .ja_0_pin1_o(ja_0_pin1_o),
+        .ja_0_pin1_t(ja_0_pin1_t),
+        .ja_0_pin2_i(ja_0_pin2_i),
+        .ja_0_pin2_o(ja_0_pin2_o),
+        .ja_0_pin2_t(ja_0_pin2_t),
+        .ja_0_pin3_i(ja_0_pin3_i),
+        .ja_0_pin3_o(ja_0_pin3_o),
+        .ja_0_pin3_t(ja_0_pin3_t),
+        .ja_0_pin4_i(ja_0_pin4_i),
+        .ja_0_pin4_o(ja_0_pin4_o),
+        .ja_0_pin4_t(ja_0_pin4_t),
+        .ja_0_pin7_i(ja_0_pin7_i),
+        .ja_0_pin7_o(ja_0_pin7_o),
+        .ja_0_pin7_t(ja_0_pin7_t),
+        .ja_0_pin8_i(ja_0_pin8_i),
+        .ja_0_pin8_o(ja_0_pin8_o),
+        .ja_0_pin8_t(ja_0_pin8_t),
+        .ja_0_pin9_i(ja_0_pin9_i),
+        .ja_0_pin9_o(ja_0_pin9_o),
+        .ja_0_pin9_t(ja_0_pin9_t),
         .led_16bits_tri_o(led_16bits_tri_o),
-        .mdio_rtl_mdc(mdio_rtl_mdc),
-        .mdio_rtl_mdio_i(mdio_rtl_mdio_i),
-        .mdio_rtl_mdio_o(mdio_rtl_mdio_o),
-        .mdio_rtl_mdio_t(mdio_rtl_mdio_t),
-        .mii_rtl_col(mii_rtl_col),
-        .mii_rtl_crs(mii_rtl_crs),
-        .mii_rtl_rst_n(mii_rtl_rst_n),
-        .mii_rtl_rx_clk(mii_rtl_rx_clk),
-        .mii_rtl_rx_dv(mii_rtl_rx_dv),
-        .mii_rtl_rx_er(mii_rtl_rx_er),
-        .mii_rtl_rxd(mii_rtl_rxd),
-        .mii_rtl_tx_clk(mii_rtl_tx_clk),
-        .mii_rtl_tx_en(mii_rtl_tx_en),
-        .mii_rtl_txd(mii_rtl_txd),
         .push_buttons_4bits_tri_i(push_buttons_4bits_tri_i),
         .qspi_flash_io0_i(qspi_flash_io0_i),
         .qspi_flash_io0_o(qspi_flash_io0_o),
