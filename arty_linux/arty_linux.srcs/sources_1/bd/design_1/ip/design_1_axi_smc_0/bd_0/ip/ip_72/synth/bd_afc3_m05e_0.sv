@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:ip:sc_exit:1.0
-// IP Revision: 8
+// IP Revision: 9
 
-(* X_CORE_INFO = "sc_exit_v1_0_8_top,Vivado 2019.1" *)
-(* CHECK_LICENSE_TYPE = "bd_afc3_m05e_0,sc_exit_v1_0_8_top,{}" *)
-(* CORE_GENERATION_INFO = "bd_afc3_m05e_0,sc_exit_v1_0_8_top,{x_ipProduct=Vivado 2019.1,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=sc_exit,x_ipVersion=1.0,x_ipCoreRevision=8,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_FAMILY=artix7,C_ENABLE_PIPELINING=0x1,C_IS_CASCADED=0,C_SSC_ROUTE_WIDTH=3,C_MEP_IDENTIFIER_WIDTH=2,C_SSC_ROUTE_ARRAY=0b000010001100,C_RDATA_WIDTH=32,C_WDATA_WIDTH=32,C_M_RUSER_BITS_PER_BYTE=0,C_M_WUSER_BITS_PER_BYTE=0,C_MAX_RUSER_BITS_PER_BYTE=0,C_MAX_WUSER_BITS_PER_BYTE=0,C_M_ARUSER_WIDTH=0,C_M_AWUSER_WIDT\
+(* X_CORE_INFO = "sc_exit_v1_0_9_top,Vivado 2019.2" *)
+(* CHECK_LICENSE_TYPE = "bd_afc3_m05e_0,sc_exit_v1_0_9_top,{}" *)
+(* CORE_GENERATION_INFO = "bd_afc3_m05e_0,sc_exit_v1_0_9_top,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=sc_exit,x_ipVersion=1.0,x_ipCoreRevision=9,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_FAMILY=artix7,C_ENABLE_PIPELINING=0x1,C_IS_CASCADED=0,C_SSC_ROUTE_WIDTH=3,C_MEP_IDENTIFIER_WIDTH=2,C_SSC_ROUTE_ARRAY=0b000010001100,C_RDATA_WIDTH=32,C_WDATA_WIDTH=32,C_M_RUSER_BITS_PER_BYTE=0,C_M_WUSER_BITS_PER_BYTE=0,C_MAX_RUSER_BITS_PER_BYTE=0,C_MAX_WUSER_BITS_PER_BYTE=0,C_M_ARUSER_WIDTH=0,C_M_AWUSER_WIDT\
 H=0,C_M_RUSER_WIDTH=0,C_M_WUSER_WIDTH=0,C_M_BUSER_WIDTH=0,C_S_ID_WIDTH=2,C_M_ID_WIDTH=0,C_ADDR_WIDTH=4,C_M_PROTOCOL=2,C_HAS_LOCK=0,C_NUM_MSC=8,C_SINGLE_ISSUING=0,C_M_LIMIT_READ_LENGTH=1,C_M_LIMIT_WRITE_LENGTH=1,C_NUM_READ_OUTSTANDING=8,C_NUM_WRITE_OUTSTANDING=32,C_READ_ACCEPTANCE=32,C_WRITE_ACCEPTANCE=32}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module bd_afc3_m05e_0 (
@@ -242,7 +242,7 @@ THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI RREADY" *)
 output wire m_axi_rready;
 
-  sc_exit_v1_0_8_top #(
+  sc_exit_v1_0_9_top #(
     .C_FAMILY("artix7"),
     .C_ENABLE_PIPELINING(1'H1),
     .C_IS_CASCADED(0),

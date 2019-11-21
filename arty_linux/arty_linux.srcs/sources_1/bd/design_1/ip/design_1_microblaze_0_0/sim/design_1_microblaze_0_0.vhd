@@ -47,14 +47,14 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:ip:microblaze:11.0
--- IP Revision: 1
+-- IP Revision: 2
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
 
-LIBRARY microblaze_v11_0_1;
-USE microblaze_v11_0_1.MicroBlaze;
+LIBRARY microblaze_v11_0_2;
+USE microblaze_v11_0_2.MicroBlaze;
 
 ENTITY design_1_microblaze_0_0 IS
   PORT (
@@ -228,8 +228,10 @@ ARCHITECTURE design_1_microblaze_0_0_arch OF design_1_microblaze_0_0 IS
       C_M_AXI_IP_ADDR_WIDTH : INTEGER;
       C_M_AXI_I_BUS_EXCEPTION : INTEGER;
       C_D_LMB : INTEGER;
+      C_D_LMB_PROTOCOL : INTEGER;
       C_D_AXI : INTEGER;
       C_I_LMB : INTEGER;
+      C_I_LMB_PROTOCOL : INTEGER;
       C_I_AXI : INTEGER;
       C_USE_MSR_INSTR : INTEGER;
       C_USE_PCMP_INSTR : INTEGER;
@@ -922,7 +924,7 @@ ARCHITECTURE design_1_microblaze_0_0_arch OF design_1_microblaze_0_0 IS
   ATTRIBUTE X_INTERFACE_INFO OF D_AS: SIGNAL IS "xilinx.com:interface:lmb:1.0 DLMB ADDRSTROBE";
   ATTRIBUTE X_INTERFACE_INFO OF Data_Write: SIGNAL IS "xilinx.com:interface:lmb:1.0 DLMB WRITEDBUS";
   ATTRIBUTE X_INTERFACE_INFO OF Data_Read: SIGNAL IS "xilinx.com:interface:lmb:1.0 DLMB READDBUS";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF Data_Addr: SIGNAL IS "XIL_INTERFACENAME DLMB, ADDR_WIDTH 32, DATA_WIDTH 32, READ_WRITE_MODE READ_WRITE";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF Data_Addr: SIGNAL IS "XIL_INTERFACENAME DLMB, ADDR_WIDTH 32, DATA_WIDTH 32, PROTOCOL STANDARD, READ_WRITE_MODE READ_WRITE";
   ATTRIBUTE X_INTERFACE_INFO OF Data_Addr: SIGNAL IS "xilinx.com:interface:lmb:1.0 DLMB ABUS";
   ATTRIBUTE X_INTERFACE_INFO OF IUE: SIGNAL IS "xilinx.com:interface:lmb:1.0 ILMB UE";
   ATTRIBUTE X_INTERFACE_INFO OF ICE: SIGNAL IS "xilinx.com:interface:lmb:1.0 ILMB CE";
@@ -931,7 +933,7 @@ ARCHITECTURE design_1_microblaze_0_0_arch OF design_1_microblaze_0_0 IS
   ATTRIBUTE X_INTERFACE_INFO OF I_AS: SIGNAL IS "xilinx.com:interface:lmb:1.0 ILMB ADDRSTROBE";
   ATTRIBUTE X_INTERFACE_INFO OF IFetch: SIGNAL IS "xilinx.com:interface:lmb:1.0 ILMB READSTROBE";
   ATTRIBUTE X_INTERFACE_INFO OF Instr: SIGNAL IS "xilinx.com:interface:lmb:1.0 ILMB READDBUS";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF Instr_Addr: SIGNAL IS "XIL_INTERFACENAME ILMB, ADDR_WIDTH 32, DATA_WIDTH 32, READ_WRITE_MODE READ_ONLY";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF Instr_Addr: SIGNAL IS "XIL_INTERFACENAME ILMB, ADDR_WIDTH 32, DATA_WIDTH 32, PROTOCOL STANDARD, READ_WRITE_MODE READ_ONLY";
   ATTRIBUTE X_INTERFACE_INFO OF Instr_Addr: SIGNAL IS "xilinx.com:interface:lmb:1.0 ILMB ABUS";
   ATTRIBUTE X_INTERFACE_INFO OF Interrupt_Ack: SIGNAL IS "xilinx.com:interface:mbinterrupt:1.0 INTERRUPT ACK";
   ATTRIBUTE X_INTERFACE_INFO OF Interrupt_Address: SIGNAL IS "xilinx.com:interface:mbinterrupt:1.0 INTERRUPT ADDRESS";
@@ -981,8 +983,10 @@ BEGIN
       C_M_AXI_IP_ADDR_WIDTH => 32,
       C_M_AXI_I_BUS_EXCEPTION => 1,
       C_D_LMB => 1,
+      C_D_LMB_PROTOCOL => 0,
       C_D_AXI => 1,
       C_I_LMB => 1,
+      C_I_LMB_PROTOCOL => 0,
       C_I_AXI => 0,
       C_USE_MSR_INSTR => 1,
       C_USE_PCMP_INSTR => 1,

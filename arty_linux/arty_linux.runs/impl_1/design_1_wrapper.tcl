@@ -168,7 +168,6 @@ set rc [catch {
   catch { write_mem_info -force design_1_wrapper.mmi }
   catch { write_bmm -force design_1_wrapper_bd.bmm }
   write_bitstream -force design_1_wrapper.bit 
-  catch { write_sysdef -hwdef design_1_wrapper.hwdef -bitfile design_1_wrapper.bit -meminfo design_1_wrapper.mmi -file design_1_wrapper.sysdef }
   catch {write_debug_probes -quiet -force design_1_wrapper}
   catch {file copy -force design_1_wrapper.ltx debug_nets.ltx}
   close_msg_db -file write_bitstream.pb

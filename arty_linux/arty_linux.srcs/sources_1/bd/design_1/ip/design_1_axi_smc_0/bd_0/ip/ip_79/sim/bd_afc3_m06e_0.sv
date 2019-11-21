@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:ip:sc_exit:1.0
-// IP Revision: 8
+// IP Revision: 9
 
 `timescale 1ns/1ps
 
@@ -240,7 +240,7 @@ THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI RREADY" *)
 output wire m_axi_rready;
 
-  sc_exit_v1_0_8_top #(
+  sc_exit_v1_0_9_top #(
     .C_FAMILY("artix7"),
     .C_ENABLE_PIPELINING(1'H1),
     .C_IS_CASCADED(0),

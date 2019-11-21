@@ -47,14 +47,14 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:ip:axi_quad_spi:3.2
--- IP Revision: 18
+-- IP Revision: 19
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
 
-LIBRARY axi_quad_spi_v3_2_18;
-USE axi_quad_spi_v3_2_18.axi_quad_spi;
+LIBRARY axi_quad_spi_v3_2_19;
+USE axi_quad_spi_v3_2_19.axi_quad_spi;
 
 ENTITY design_1_axi_quad_spi_0_0 IS
   PORT (

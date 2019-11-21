@@ -1,7 +1,7 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
---Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
---Date        : Tue Oct 29 14:51:40 2019
+--Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+--Date        : Wed Nov 20 12:49:23 2019
 --Host        : BZ-ECE-CB539-02 running 64-bit major release  (build 9200)
 --Command     : generate_target design_1_wrapper.bd
 --Design      : design_1_wrapper
@@ -64,6 +64,24 @@ architecture STRUCTURE of design_1_wrapper is
     sys_clock : in STD_LOGIC;
     eth_ref_clk : out STD_LOGIC;
     reset : in STD_LOGIC;
+    qspi_flash_io0_i : in STD_LOGIC;
+    qspi_flash_io0_o : out STD_LOGIC;
+    qspi_flash_io0_t : out STD_LOGIC;
+    qspi_flash_io1_i : in STD_LOGIC;
+    qspi_flash_io1_o : out STD_LOGIC;
+    qspi_flash_io1_t : out STD_LOGIC;
+    qspi_flash_io2_i : in STD_LOGIC;
+    qspi_flash_io2_o : out STD_LOGIC;
+    qspi_flash_io2_t : out STD_LOGIC;
+    qspi_flash_io3_i : in STD_LOGIC;
+    qspi_flash_io3_o : out STD_LOGIC;
+    qspi_flash_io3_t : out STD_LOGIC;
+    qspi_flash_sck_i : in STD_LOGIC;
+    qspi_flash_sck_o : out STD_LOGIC;
+    qspi_flash_sck_t : out STD_LOGIC;
+    qspi_flash_ss_i : in STD_LOGIC;
+    qspi_flash_ss_o : out STD_LOGIC;
+    qspi_flash_ss_t : out STD_LOGIC;
     ddr3_sdram_dq : inout STD_LOGIC_VECTOR ( 15 downto 0 );
     ddr3_sdram_dqs_p : inout STD_LOGIC_VECTOR ( 1 downto 0 );
     ddr3_sdram_dqs_n : inout STD_LOGIC_VECTOR ( 1 downto 0 );
@@ -93,27 +111,9 @@ architecture STRUCTURE of design_1_wrapper is
     eth_mdio_mdc_mdio_i : in STD_LOGIC;
     eth_mdio_mdc_mdio_o : out STD_LOGIC;
     eth_mdio_mdc_mdio_t : out STD_LOGIC;
-    qspi_flash_io0_i : in STD_LOGIC;
-    qspi_flash_io0_o : out STD_LOGIC;
-    qspi_flash_io0_t : out STD_LOGIC;
-    qspi_flash_io1_i : in STD_LOGIC;
-    qspi_flash_io1_o : out STD_LOGIC;
-    qspi_flash_io1_t : out STD_LOGIC;
-    qspi_flash_io2_i : in STD_LOGIC;
-    qspi_flash_io2_o : out STD_LOGIC;
-    qspi_flash_io2_t : out STD_LOGIC;
-    qspi_flash_io3_i : in STD_LOGIC;
-    qspi_flash_io3_o : out STD_LOGIC;
-    qspi_flash_io3_t : out STD_LOGIC;
-    qspi_flash_sck_i : in STD_LOGIC;
-    qspi_flash_sck_o : out STD_LOGIC;
-    qspi_flash_sck_t : out STD_LOGIC;
-    qspi_flash_ss_i : in STD_LOGIC;
-    qspi_flash_ss_o : out STD_LOGIC;
-    qspi_flash_ss_t : out STD_LOGIC;
-    led_4bits_tri_o : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    push_buttons_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
     rgb_led_tri_o : out STD_LOGIC_VECTOR ( 11 downto 0 );
+    push_buttons_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    led_4bits_tri_o : out STD_LOGIC_VECTOR ( 3 downto 0 );
     dip_switches_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
     usb_uart_rxd : in STD_LOGIC;
     usb_uart_txd : out STD_LOGIC

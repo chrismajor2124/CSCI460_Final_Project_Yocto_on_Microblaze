@@ -47,14 +47,14 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:ip:axi_ethernetlite:3.0
--- IP Revision: 17
+-- IP Revision: 18
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
 
-LIBRARY axi_ethernetlite_v3_0_17;
-USE axi_ethernetlite_v3_0_17.axi_ethernetlite;
+LIBRARY axi_ethernetlite_v3_0_18;
+USE axi_ethernetlite_v3_0_18.axi_ethernetlite;
 
 ENTITY design_1_axi_ethernetlite_0_0 IS
   PORT (
