@@ -1,4 +1,0 @@
-ERROR: Exception caught trying to open file C:\Users\w63j839\Documents\Coursework\CSCI460\CSCI460_Final_Project\basys_linux\basys_linux.runs\impl_1/runme.log
-	Exception name: Error
-	Exception error code: 70
-	Exception message: Permission denied

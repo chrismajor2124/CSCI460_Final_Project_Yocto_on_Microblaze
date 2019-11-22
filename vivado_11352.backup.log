@@ -1,0 +1,315 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Nov 20 21:18:02 2019
+# Process ID: 11352
+# Current directory: C:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8328 C:\Vivado\projects\CSCI460_Final_Project_Yocto_on_Microblaze\arty_linux\arty_linux.xpr
+# Log file: C:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/vivado.log
+# Journal file: C:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/w63j839/Documents/Coursework/CSCI460/CSCI460_Final_Project/arty_linux' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] Board Part Repository Path: Could not find the directory 'C:/../../AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store', nor could it be found using path 'C:/Users/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store'.
+WARNING: [filemgmt 56-2] Board Part Repository Path: Could not find the directory 'C:/../../../../Xilinx/Vivado/2019.1/data/boards/board_files', nor could it be found using path 'C:/../Xilinx/Vivado/2019.1/data/boards/board_files'.
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'C:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.ip_user_files', nor could it be found using path 'C:/Users/w63j839/Documents/Coursework/CSCI460/CSCI460_Final_Project/arty_linux/arty_linux.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'design_1_clk_wiz_0_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_clk_wiz_0_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_clk_wiz_0_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_clk_wiz_0_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_clk_wiz_0_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_microblaze_0_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_microblaze_0_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_microblaze_0_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_microblaze_0_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_microblaze_0_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_dlmb_v10_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_dlmb_v10_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_dlmb_v10_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_dlmb_v10_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_dlmb_v10_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_ilmb_v10_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_ilmb_v10_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_ilmb_v10_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_ilmb_v10_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_ilmb_v10_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_dlmb_bram_if_cntlr_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_dlmb_bram_if_cntlr_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_dlmb_bram_if_cntlr_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_dlmb_bram_if_cntlr_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_dlmb_bram_if_cntlr_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_ilmb_bram_if_cntlr_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_ilmb_bram_if_cntlr_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_ilmb_bram_if_cntlr_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_ilmb_bram_if_cntlr_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_ilmb_bram_if_cntlr_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_lmb_bram_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_lmb_bram_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_lmb_bram_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_lmb_bram_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_lmb_bram_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_mdm_1_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_mdm_1_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_mdm_1_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_mdm_1_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_mdm_1_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_axi_smc_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_axi_smc_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_axi_smc_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_axi_smc_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_axi_smc_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_axi_ethernetlite_0_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernetlite_0_0/design_1_axi_ethernetlite_0_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_axi_ethernetlite_0_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernetlite_0_0/design_1_axi_ethernetlite_0_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_axi_ethernetlite_0_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernetlite_0_0/design_1_axi_ethernetlite_0_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_axi_ethernetlite_0_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernetlite_0_0/design_1_axi_ethernetlite_0_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_axi_ethernetlite_0_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernetlite_0_0/design_1_axi_ethernetlite_0_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_axi_quad_spi_0_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_axi_quad_spi_0_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_axi_quad_spi_0_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_axi_quad_spi_0_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_axi_quad_spi_0_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_axi_gpio_0_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_axi_gpio_0_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_axi_gpio_0_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_axi_gpio_0_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_axi_gpio_0_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_axi_gpio_1_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_axi_gpio_1_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_axi_gpio_1_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_axi_gpio_1_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_axi_gpio_1_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_axi_uartlite_0_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_axi_uartlite_0_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_axi_uartlite_0_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_axi_uartlite_0_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_axi_uartlite_0_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_axi_timer_0_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_axi_timer_0_0/design_1_axi_timer_0_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_axi_timer_0_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_axi_timer_0_0/design_1_axi_timer_0_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_axi_timer_0_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_axi_timer_0_0/design_1_axi_timer_0_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_axi_timer_0_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_axi_timer_0_0/design_1_axi_timer_0_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_axi_timer_0_0' generated file not found 'c:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ip/design_1_axi_timer_0_0/design_1_axi_timer_0_0_sim_netlist.vhdl'. Please regenerate to continue.
+open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:16 . Memory (MB): peak = 1041.609 ; gain = 382.730
+update_compile_order -fileset sources_1
+open_bd_design {C:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/design_1.bd}
+Adding component instance block -- xilinx.com:ip:mig_7series:4.2 - mig_7series_0
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_mig_7series_0_83M
+Adding component instance block -- xilinx.com:ip:axi_ethernetlite:3.0 - axi_ethernetlite_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_1
+Adding component instance block -- xilinx.com:ip:axi_quad_spi:3.2 - axi_quad_spi_0
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Adding component instance block -- xilinx.com:ip:axi_timer:2.0 - axi_timer_0
+Adding component instance block -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:mdm:3.2 - mdm_1
+Adding component instance block -- xilinx.com:ip:microblaze:11.0 - microblaze_0
+Successfully read diagram <design_1> from BD file <C:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 1128.234 ; gain = 80.859
+reset_run synth_1
+reset_run design_1_ilmb_v10_0_synth_1
+reset_run design_1_ilmb_bram_if_cntlr_0_synth_1
+reset_run design_1_axi_gpio_1_0_synth_1
+reset_run design_1_axi_quad_spi_0_0_synth_1
+reset_run design_1_axi_uartlite_0_0_synth_1
+reset_run design_1_axi_timer_0_0_synth_1
+reset_run design_1_axi_gpio_0_0_synth_1
+reset_run design_1_clk_wiz_0_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Process appears to be on host 'BZ-ECE-CB539-02' and cannot be killed from host 'Behemoth'
+
+reset_run design_1_microblaze_0_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Process appears to be on host 'BZ-ECE-CB539-02' and cannot be killed from host 'Behemoth'
+
+reset_run design_1_dlmb_v10_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Process appears to be on host 'BZ-ECE-CB539-02' and cannot be killed from host 'Behemoth'
+
+reset_run design_1_dlmb_bram_if_cntlr_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Process appears to be on host 'BZ-ECE-CB539-02' and cannot be killed from host 'Behemoth'
+
+reset_run design_1_lmb_bram_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Process appears to be on host 'BZ-ECE-CB539-02' and cannot be killed from host 'Behemoth'
+
+reset_run design_1_mdm_1_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Process appears to be on host 'BZ-ECE-CB539-02' and cannot be killed from host 'Behemoth'
+
+reset_run design_1_axi_smc_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Process appears to be on host 'BZ-ECE-CB539-02' and cannot be killed from host 'Behemoth'
+
+reset_run design_1_axi_ethernetlite_0_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Process appears to be on host 'BZ-ECE-CB539-02' and cannot be killed from host 'Behemoth'
+
+reset_run design_1_mig_7series_0_1_synth_1
+launch_runs synth_1 -jobs 4
+INFO: [IP_Flow 19-5642] Done with IP cache export for multiple IPs
+[Wed Nov 20 21:22:42 2019] Launched design_1_mig_7series_0_1_synth_1, design_1_clk_wiz_0_0_synth_1, design_1_microblaze_0_0_synth_1, design_1_dlmb_v10_0_synth_1, design_1_ilmb_v10_0_synth_1, design_1_dlmb_bram_if_cntlr_0_synth_1, design_1_ilmb_bram_if_cntlr_0_synth_1, design_1_lmb_bram_0_synth_1, design_1_mdm_1_0_synth_1, design_1_axi_smc_0_synth_1, design_1_axi_ethernetlite_0_0_synth_1, design_1_axi_gpio_1_0_synth_1, design_1_axi_quad_spi_0_0_synth_1, design_1_axi_uartlite_0_0_synth_1, design_1_axi_timer_0_0_synth_1, design_1_axi_gpio_0_0_synth_1...
+Run output will be captured here:
+design_1_mig_7series_0_1_synth_1: C:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.runs/design_1_mig_7series_0_1_synth_1/runme.log
+design_1_clk_wiz_0_0_synth_1: C:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.runs/design_1_clk_wiz_0_0_synth_1/runme.log
+design_1_microblaze_0_0_synth_1: C:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.runs/design_1_microblaze_0_0_synth_1/runme.log
+design_1_dlmb_v10_0_synth_1: C:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.runs/design_1_dlmb_v10_0_synth_1/runme.log
+design_1_ilmb_v10_0_synth_1: C:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.runs/design_1_ilmb_v10_0_synth_1/runme.log
+design_1_dlmb_bram_if_cntlr_0_synth_1: C:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.runs/design_1_dlmb_bram_if_cntlr_0_synth_1/runme.log
+design_1_ilmb_bram_if_cntlr_0_synth_1: C:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.runs/design_1_ilmb_bram_if_cntlr_0_synth_1/runme.log
+design_1_lmb_bram_0_synth_1: C:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.runs/design_1_lmb_bram_0_synth_1/runme.log
+design_1_mdm_1_0_synth_1: C:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.runs/design_1_mdm_1_0_synth_1/runme.log
+design_1_axi_smc_0_synth_1: C:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.runs/design_1_axi_smc_0_synth_1/runme.log
+design_1_axi_ethernetlite_0_0_synth_1: C:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.runs/design_1_axi_ethernetlite_0_0_synth_1/runme.log
+design_1_axi_gpio_1_0_synth_1: C:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.runs/design_1_axi_gpio_1_0_synth_1/runme.log
+design_1_axi_quad_spi_0_0_synth_1: C:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.runs/design_1_axi_quad_spi_0_0_synth_1/runme.log
+design_1_axi_uartlite_0_0_synth_1: C:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.runs/design_1_axi_uartlite_0_0_synth_1/runme.log
+design_1_axi_timer_0_0_synth_1: C:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.runs/design_1_axi_timer_0_0_synth_1/runme.log
+design_1_axi_gpio_0_0_synth_1: C:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.runs/design_1_axi_gpio_0_0_synth_1/runme.log
+[Wed Nov 20 21:22:43 2019] Launched synth_1...
+Run output will be captured here: C:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.runs/synth_1/runme.log
+set_property location {1581 579} [get_bd_intf_ports rgb_led]
+set_property location {0.5 -266 854} [get_bd_cells mdm_1]
+set_property location {1 -281 858} [get_bd_cells mdm_1]
+regenerate_bd_layout -routing
+set_property location {3.5 906 859} [get_bd_cells microblaze_0_local_memory]
+regenerate_bd_layout -routing
+set_property location {0.5 -204 140} [get_bd_cells clk_wiz_0]
+set_property location {3 644 133} [get_bd_cells mig_7series_0]
+set_property location {3 472 306} [get_bd_cells axi_timer_0]
+set_property location {2 55 125} [get_bd_cells rst_mig_7series_0_83M]
+set_property location {2 56 493} [get_bd_cells rst_mig_7series_0_83M]
+set_property location {4.5 1200 146} [get_bd_cells axi_smc]
+set_property location {5 1207 156} [get_bd_cells axi_smc]
+set_property location {3.5 822 438} [get_bd_cells mig_7series_0]
+set_property location {3.5 725 104} [get_bd_cells microblaze_0]
+set_property location {4 713 137} [get_bd_cells microblaze_0]
+set_property location {4.5 1053 757} [get_bd_cells mig_7series_0]
+set_property location {5.5 1147 135} [get_bd_cells microblaze_0]
+regenerate_bd_layout -routing
+set_property location {0.5 -59 291} [get_bd_cells clk_wiz_0]
+regenerate_bd_layout -routing
+set_property location {1 205 625} [get_bd_cells rst_mig_7series_0_83M]
+set_property location {0.5 -172 413} [get_bd_cells clk_wiz_0]
+set_property location {3 591 274} [get_bd_cells microblaze_0]
+set_property location {4 1069 494} [get_bd_cells axi_smc]
+set_property location {2 138 260} [get_bd_cells rst_mig_7series_0_83M]
+set_property location {2 137 413} [get_bd_cells mdm_1]
+set_property location {2 121 610} [get_bd_cells rst_mig_7series_0_83M]
+set_property location {2 126 256} [get_bd_cells mdm_1]
+regenerate_bd_layout -routing
+set_property location {3 731 278} [get_bd_cells mig_7series_0]
+set_property location {2 451 99} [get_bd_cells axi_timer_0]
+set_property location {1728 239} [get_bd_intf_ports ddr3_sdram]
+set_property location {5 1564 483} [get_bd_cells axi_ethernetlite_0]
+set_property location {1809 409} [get_bd_ports eth_ref_clk]
+set_property location {1720 484} [get_bd_intf_ports eth_mdio_mdc]
+set_property location {2 435 460} [get_bd_cells axi_timer_0]
+set_property location {3 822 433} [get_bd_cells mig_7series_0]
+set_property location {1733 336} [get_bd_ports eth_ref_clk]
+regenerate_bd_layout -routing
+set_property location {0.5 -26 475} [get_bd_cells mig_7series_0]
+set_property location {0.5 -311 474} [get_bd_cells clk_wiz_0]
+regenerate_bd_layout -routing
+set_property location {1930 689} [get_bd_intf_ports led_4bits]
+set_property location {1960 700} [get_bd_intf_ports push_buttons_4bits]
+undo
+INFO: [Common 17-17] undo 'set_property location {1960 700} [get_bd_intf_ports push_buttons_4bits]'
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+set_property location {2 323 555} [get_bd_cells axi_timer_0]
+set_property location {1 118 549} [get_bd_cells mig_7series_0]
+set_property location {0.5 -182 539} [get_bd_cells clk_wiz_0]
+regenerate_bd_layout -routing
+set_property location {1 98 537} [get_bd_cells clk_wiz_0]
+regenerate_bd_layout -routing
+launch_runs impl_1 -jobs 4
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_mig_7series_0_1, cache-ID = b0e9c479f5564713; cache size = 99.680 MB.
+[Wed Nov 20 21:34:29 2019] Launched design_1_mig_7series_0_1_synth_1...
+Run output will be captured here: C:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.runs/design_1_mig_7series_0_1_synth_1/runme.log
+[Wed Nov 20 21:34:29 2019] Launched impl_1...
+Run output will be captured here: C:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.runs/impl_1/runme.log
+export_ip_user_files -of_objects  [get_files C:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/design_1.bd] -no_script -reset -force -quiet
+remove_files  C:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/design_1.bd
+delete_ip_run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1279.891 ; gain = 0.000
+Wrote  : <C:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+remove_files: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1281.184 ; gain = 1.293
+export_ip_user_files -of_objects  [get_files C:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd] -no_script -reset -force -quiet
+remove_files  C:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+create_bd_design "arty_microblaze_01"
+Wrote  : <C:\Vivado\projects\CSCI460_Final_Project_Yocto_on_Microblaze\arty_linux\arty_linux.srcs\sources_1\bd\arty_microblaze_01\arty_microblaze_01.bd> 
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0
+apply_board_connection -board_interface "sys_clock" -ip_intf "clk_wiz_0/clock_CLK_IN1" -diagram "arty_microblaze_01" 
+INFO: [board_interface 100-100] current_bd_design arty_microblaze_01
+INFO: [board_interface 100-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells -quiet /clk_wiz_0]
+INFO: [board_interface 100-100] set_property CONFIG.CLK_IN1_BOARD_INTERFACE sys_clock [get_bd_cells -quiet /clk_wiz_0]
+WARNING: [BD 5-670] It is required to provide a frequency value for a user created input clock port. Please use the <-freq_hz $freq_val> argument of the create_bd_port command. ie create_bd_port -dir I -type clk -freq_hz 100000000 clkin
+INFO: [board_interface 100-100] create_bd_port -dir I sys_clock -type clk
+INFO: [board_interface 100-100] set_property CONFIG.FREQ_HZ 100000000 /sys_clock
+INFO: [board_interface 100-100] set_property CONFIG.PHASE 0.000 /sys_clock
+INFO: [board_interface 100-100] connect_bd_net /sys_clock /clk_wiz_0/clk_in1
+INFO: [board_interface 100-100] set_property CONFIG.FREQ_HZ 100000000 /sys_clock
+endgroup
+startgroup
+set_property -dict [list CONFIG.CLKOUT2_USED {true} CONFIG.CLKOUT3_USED {true} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {166.667} CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {200.000} CONFIG.CLKOUT3_REQUESTED_OUT_FREQ {25} CONFIG.RESET_TYPE {ACTIVE_LOW} CONFIG.MMCM_CLKOUT0_DIVIDE_F {6.000} CONFIG.MMCM_CLKOUT1_DIVIDE {5} CONFIG.MMCM_CLKOUT2_DIVIDE {40} CONFIG.NUM_OUT_CLKS {3} CONFIG.RESET_PORT {resetn} CONFIG.CLKOUT1_JITTER {118.758} CONFIG.CLKOUT2_JITTER {114.829} CONFIG.CLKOUT2_PHASE_ERROR {98.575} CONFIG.CLKOUT3_JITTER {175.402} CONFIG.CLKOUT3_PHASE_ERROR {98.575}] [get_bd_cells clk_wiz_0]
+endgroup
+create_bd_port -dir O eth_clk
+startgroup
+connect_bd_net [get_bd_ports eth_clk] [get_bd_pins clk_wiz_0/clk_out3]
+endgroup
+set_property location {239 97} [get_bd_ports eth_clk]
+set_property name eth_ref_clk [get_bd_ports eth_clk]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {reset ( System Reset ) } Manual_Source {New External Port (ACTIVE_LOW)}}  [get_bd_pins clk_wiz_0/resetn]
+INFO: [board_rule 100-100] set_property CONFIG.RESET_BOARD_INTERFACE reset [get_bd_cells /clk_wiz_0]
+INFO: [board_rule 100-100] create_bd_port -dir I reset -type rst
+INFO: [board_rule 100-100] set_property CONFIG.POLARITY ACTIVE_LOW /reset
+INFO: [board_rule 100-100] connect_bd_net /reset /clk_wiz_0/resetn
+INFO: [board_rule 100-100] set_property CONFIG.POLARITY ACTIVE_LOW /reset
+regenerate_bd_layout -routing
+set_property location {-11 78} [get_bd_ports reset]
+set_property location {-16 98} [get_bd_ports sys_clock]
+set_property location {-14 70} [get_bd_ports reset]
+set_property location {-19 28} [get_bd_ports reset]
+set_property location {-14 78} [get_bd_ports reset]
+regenerate_bd_layout -routing
+save_bd_design
+Wrote  : <C:\Vivado\projects\CSCI460_Final_Project_Yocto_on_Microblaze\arty_linux\arty_linux.srcs\sources_1\bd\arty_microblaze_01\arty_microblaze_01.bd> 
+Wrote  : <C:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/arty_microblaze_01/ui/bd_5c7099b9.ui> 
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:mig_7series:4.2 mig_7series_0
+apply_board_connection -board_interface "ddr3_sdram" -ip_intf "mig_7series_0/mig_ddr_interface" -diagram "arty_microblaze_01" 
+INFO: [board_interface 100-100] current_bd_design arty_microblaze_01
+INFO: [board_interface 100-100] set_property CONFIG.BOARD_MIG_PARAM ddr3_sdram [get_bd_cells -quiet /mig_7series_0]
+ERROR: [Common 17-680] Path length exceeds 260-Byte maximum allowed by Windows: c:\Vivado\projects\CSCI460_Final_Project_Yocto_on_Microblaze\arty_linux\arty_linux.srcs\sources_1\bd\arty_microblaze_01\ip\arty_microblaze_01_mig_7series_0_0\_tmp\/arty_microblaze_01_mig_7series_0_0/example_design/rtl/traffic_gen/mig_7series_v4_2_axi4_wrapper.v
+Please consider using the OS subst command to shorten the path length by mapping part of the path to a virtual drive letter. See Answer Record AR52787 for more information.
+Resolution: In Windows 7 or later, the mklink command can also be used to create a symbolic link and shorten the path.
+ERROR: [IP_Flow 19-3475] Tcl error in ::ipgui_arty_microblaze_01_mig_7series_0_0::updateAllModelParams procedure for BD Cell 'mig_7series_0'. ERROR: [Common 17-680] Path length exceeds 260-Byte maximum allowed by Windows: c:\Vivado\projects\CSCI460_Final_Project_Yocto_on_Microblaze\arty_linux\arty_linux.srcs\sources_1\bd\arty_microblaze_01\ip\arty_microblaze_01_mig_7series_0_0\_tmp\/arty_microblaze_01_mig_7series_0_0/example_design/rtl/traffic_gen/mig_7series_v4_2_axi4_wrapper.v
+Please consider using the OS subst command to shorten the path length by mapping part of the path to a virtual drive letter. See Answer Record AR52787 for more information.
+Resolution: In Windows 7 or later, the mklink command can also be used to create a symbolic link and shorten the path.
+
+INFO: [IP_Flow 19-3438] Customization errors found on 'mig_7series_0'. Restoring to previous valid configuration.
+ERROR: [BD 41-245] set_property error - Customization errors found on 'mig_7series_0'. Restoring to previous valid configuration.
+
+ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+INFO: [Common 17-17] undo 'apply_board_connection -board_interface "ddr3_sdram" -ip_intf "mig_7series_0/mig_ddr_interface" -diagram "arty_microblaze_01" '
+1
+endgroup
+delete_bd_objs [get_bd_cells mig_7series_0]
+save_bd_design
+Wrote  : <C:\Vivado\projects\CSCI460_Final_Project_Yocto_on_Microblaze\arty_linux\arty_linux.srcs\sources_1\bd\arty_microblaze_01\arty_microblaze_01.bd> 
+Wrote  : <C:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux/arty_linux.srcs/sources_1/bd/arty_microblaze_01/ui/bd_5c7099b9.ui> 
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 20 21:45:56 2019...

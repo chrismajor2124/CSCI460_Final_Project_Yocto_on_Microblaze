@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Nov 20 22:02:19 2019
+# Process ID: 6120
+# Current directory: C:/Vivado/projects/CSCI460/arty_linux.runs/arty_microblaze_01_auto_pc_5_synth_1
+# Command line: vivado.exe -log arty_microblaze_01_auto_pc_5.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source arty_microblaze_01_auto_pc_5.tcl
+# Log file: C:/Vivado/projects/CSCI460/arty_linux.runs/arty_microblaze_01_auto_pc_5_synth_1/arty_microblaze_01_auto_pc_5.vds
+# Journal file: C:/Vivado/projects/CSCI460/arty_linux.runs/arty_microblaze_01_auto_pc_5_synth_1\vivado.jou
+#-----------------------------------------------------------
+source arty_microblaze_01_auto_pc_5.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP arty_microblaze_01_auto_pc_5, cache-ID = 4db0fdd3f420be8c.
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 20 22:02:29 2019...

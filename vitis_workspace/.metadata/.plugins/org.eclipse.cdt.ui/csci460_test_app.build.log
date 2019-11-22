@@ -1,0 +1,26 @@
+22:33:26 **** Build of configuration Debug for project csci460_test_app ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -IC:/Vivado/projects/CSCI460/vitis_workspace/arty_microblaze_01_wrapper/export/arty_microblaze_01_wrapper/sw/arty_microblaze_01_wrapper/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -IC:/Vivado/projects/CSCI460/vitis_workspace/arty_microblaze_01_wrapper/export/arty_microblaze_01_wrapper/sw/arty_microblaze_01_wrapper/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: csci460_test_app.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Vivado/projects/CSCI460/vitis_workspace/arty_microblaze_01_wrapper/export/arty_microblaze_01_wrapper/sw/arty_microblaze_01_wrapper/standalone_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "csci460_test_app.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: csci460_test_app.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size csci460_test_app.elf  |tee "csci460_test_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2740	    336	   3108	   6184	   1828	csci460_test_app.elf
+'Finished building: csci460_test_app.elf.size'
+' '
+
+22:33:27 Build Finished (took 1s.147ms)
+
