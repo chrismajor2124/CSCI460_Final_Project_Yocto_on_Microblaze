@@ -2,10 +2,10 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Wed Nov 20 21:46:36 2019
-# Process ID: 9136
+# Start of session at: Thu Nov 21 20:09:27 2019
+# Process ID: 8532
 # Current directory: C:/Vivado/projects/CSCI460
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10720 C:\Vivado\projects\CSCI460\arty_linux.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11136 C:\Vivado\projects\CSCI460\arty_linux.xpr
 # Log file: C:/Vivado/projects/CSCI460/vivado.log
 # Journal file: C:/Vivado/projects/CSCI460\vivado.jou
 #-----------------------------------------------------------
@@ -13,97 +13,3 @@ start_gui
 open_project C:/Vivado/projects/CSCI460/arty_linux.xpr
 update_compile_order -fileset sources_1
 open_bd_design {C:/Vivado/projects/CSCI460/arty_linux.srcs/sources_1/bd/arty_microblaze_01/arty_microblaze_01.bd}
-startgroup
-create_bd_cell -type ip -vlnv xilinx.com:ip:mig_7series:4.2 mig_7series_0
-apply_board_connection -board_interface "ddr3_sdram" -ip_intf "mig_7series_0/mig_ddr_interface" -diagram "arty_microblaze_01" 
-endgroup
-set_property location {0.5 -156 -69} [get_bd_cells mig_7series_0]
-regenerate_bd_layout -routing
-set_property location {2 341 353} [get_bd_cells clk_wiz_0]
-regenerate_bd_layout -routing
-delete_bd_objs [get_bd_nets clk_ref_i_1] [get_bd_ports clk_ref_i]
-delete_bd_objs [get_bd_nets sys_clk_i_1] [get_bd_ports sys_clk_i]
-set_property location {-16 85} [get_bd_ports sys_clock]
-set_property location {-25 261} [get_bd_ports sys_clock]
-set_property location {-19 231} [get_bd_ports reset]
-set_property location {2 397 292} [get_bd_cells clk_wiz_0]
-set_property location {491 288} [get_bd_ports eth_ref_clk]
-connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins mig_7series_0/sys_clk_i]
-connect_bd_net [get_bd_pins clk_wiz_0/clk_out2] [get_bd_pins mig_7series_0/clk_ref_i]
-connect_bd_net [get_bd_ports reset] [get_bd_pins mig_7series_0/sys_rst]
-startgroup
-create_bd_cell -type ip -vlnv xilinx.com:ip:microblaze:11.0 microblaze_0
-endgroup
-apply_bd_automation -rule xilinx.com:bd_rule:microblaze -config { axi_intc {1} axi_periph {Enabled} cache {16KB} clk {/mig_7series_0/ui_clk (83 MHz)} debug_module {Debug Only} ecc {None} local_mem {64KB} preset {None}}  [get_bd_cells microblaze_0]
-startgroup
-apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/mig_7series_0/ui_clk (83 MHz)} Clk_slave {/mig_7series_0/ui_clk (83 MHz)} Clk_xbar {/mig_7series_0/ui_clk (83 MHz)} Master {/microblaze_0/M_AXI_DC} Slave {/microblaze_0_axi_intc/s_axi} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins microblaze_0/M_AXI_DC]
-apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/mig_7series_0/ui_clk (83 MHz)} Clk_slave {/mig_7series_0/ui_clk (83 MHz)} Clk_xbar {/mig_7series_0/ui_clk (83 MHz)} Master {/microblaze_0/M_AXI_IC} Slave {/microblaze_0_axi_intc/s_axi} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins microblaze_0/M_AXI_IC]
-apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/mig_7series_0/ui_clk (83 MHz)} Clk_slave {/mig_7series_0/ui_clk (83 MHz)} Clk_xbar {/mig_7series_0/ui_clk (83 MHz)} Master {/microblaze_0 (Cached)} Slave {/mig_7series_0/S_AXI} ddr_seg {Auto} intc_ip {New AXI SmartConnect} master_apm {0}}  [get_bd_intf_pins mig_7series_0/S_AXI]
-endgroup
-startgroup
-create_bd_cell -type ip -vlnv xilinx.com:ip:axi_ethernetlite:3.0 axi_ethernetlite_0
-apply_board_connection -board_interface "eth_mii" -ip_intf "axi_ethernetlite_0/MII" -diagram "arty_microblaze_01" 
-apply_board_connection -board_interface "eth_mdio_mdc" -ip_intf "axi_ethernetlite_0/MDIO" -diagram "arty_microblaze_01" 
-endgroup
-startgroup
-create_bd_cell -type ip -vlnv xilinx.com:ip:axi_quad_spi:3.2 axi_quad_spi_0
-apply_board_connection -board_interface "qspi_flash" -ip_intf "axi_quad_spi_0/SPI_0" -diagram "arty_microblaze_01" 
-endgroup
-startgroup
-create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
-apply_board_connection -board_interface "led_4bits" -ip_intf "axi_gpio_0/GPIO" -diagram "arty_microblaze_01" 
-endgroup
-set_property location {3.5 1074 -297} [get_bd_cells microblaze_0_axi_intc]
-apply_board_connection -board_interface "push_buttons_4bits" -ip_intf "axi_gpio_0/GPIO2" -diagram "arty_microblaze_01" 
-startgroup
-create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_1
-apply_board_connection -board_interface "rgb_led" -ip_intf "axi_gpio_1/GPIO" -diagram "arty_microblaze_01" 
-endgroup
-apply_board_connection -board_interface "dip_switches_4bits" -ip_intf "axi_gpio_1/GPIO2" -diagram "arty_microblaze_01" 
-startgroup
-create_bd_cell -type ip -vlnv xilinx.com:ip:axi_uartlite:2.0 axi_uartlite_0
-apply_board_connection -board_interface "usb_uart" -ip_intf "axi_uartlite_0/UART" -diagram "arty_microblaze_01" 
-endgroup
-startgroup
-create_bd_cell -type ip -vlnv xilinx.com:ip:axi_timer:2.0 axi_timer_0
-endgroup
-startgroup
-apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/mig_7series_0/ui_clk (83 MHz)} Clk_slave {Auto} Clk_xbar {/mig_7series_0/ui_clk (83 MHz)} Master {/microblaze_0 (Periph)} Slave {/axi_ethernetlite_0/S_AXI} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_ethernetlite_0/S_AXI]
-apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/mig_7series_0/ui_clk (83 MHz)} Clk_slave {Auto} Clk_xbar {/mig_7series_0/ui_clk (83 MHz)} Master {/microblaze_0 (Periph)} Slave {/axi_gpio_0/S_AXI} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_gpio_0/S_AXI]
-apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/mig_7series_0/ui_clk (83 MHz)} Clk_slave {Auto} Clk_xbar {/mig_7series_0/ui_clk (83 MHz)} Master {/microblaze_0 (Periph)} Slave {/axi_gpio_1/S_AXI} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_gpio_1/S_AXI]
-apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/mig_7series_0/ui_clk (83 MHz)} Clk_slave {Auto} Clk_xbar {/mig_7series_0/ui_clk (83 MHz)} Master {/microblaze_0 (Periph)} Slave {/axi_quad_spi_0/AXI_LITE} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_quad_spi_0/AXI_LITE]
-apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/mig_7series_0/ui_clk (83 MHz)} Freq {83} Ref_Clk0 {None} Ref_Clk1 {None} Ref_Clk2 {None}}  [get_bd_pins axi_quad_spi_0/ext_spi_clk]
-apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/mig_7series_0/ui_clk (83 MHz)} Clk_slave {Auto} Clk_xbar {/mig_7series_0/ui_clk (83 MHz)} Master {/microblaze_0 (Periph)} Slave {/axi_timer_0/S_AXI} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_timer_0/S_AXI]
-apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/mig_7series_0/ui_clk (83 MHz)} Clk_slave {Auto} Clk_xbar {/mig_7series_0/ui_clk (83 MHz)} Master {/microblaze_0 (Periph)} Slave {/axi_uartlite_0/S_AXI} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_uartlite_0/S_AXI]
-endgroup
-startgroup
-set_property -dict [list CONFIG.NUM_PORTS {4}] [get_bd_cells microblaze_0_xlconcat]
-endgroup
-connect_bd_net [get_bd_pins axi_ethernetlite_0/ip2intc_irpt] [get_bd_pins microblaze_0_xlconcat/In0]
-connect_bd_net [get_bd_pins axi_quad_spi_0/ip2intc_irpt] [get_bd_pins microblaze_0_xlconcat/In1]
-connect_bd_net [get_bd_pins axi_uartlite_0/interrupt] [get_bd_pins microblaze_0_xlconcat/In2]
-connect_bd_net [get_bd_pins axi_timer_0/interrupt] [get_bd_pins microblaze_0_xlconcat/In3]
-regenerate_bd_layout -routing
-save_bd_design
-make_wrapper -files [get_files C:/Vivado/projects/CSCI460/arty_linux.srcs/sources_1/bd/arty_microblaze_01/arty_microblaze_01.bd] -top
-add_files -norecurse C:/Vivado/projects/CSCI460/arty_linux.srcs/sources_1/bd/arty_microblaze_01/hdl/arty_microblaze_01_wrapper.vhd
-update_compile_order -fileset sources_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-open_hw_manager
-connect_hw_server -allow_non_jtag
-open_hw_target
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Vivado/projects/A7_Basys_Demo_01_LEDs/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-write_hw_platform -fixed -force  -include_bit -file C:/Vivado/projects/CSCI460/arty_microblaze_01_wrapper.xsa
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Vivado/projects/A7_Basys_Demo_01_LEDs/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

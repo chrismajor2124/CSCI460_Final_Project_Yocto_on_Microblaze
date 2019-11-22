@@ -205,3 +205,189 @@ con
 
 22:34:29 INFO  : Launch script is exported to file 'C:\Vivado\projects\CSCI460\vitis_workspace\.sdk\launch_scripts\single_application_debug\debugger_csci460_test_app-default.tcl'
 22:36:55 INFO  : Disconnected from the channel tcfchan#11.
+20:58:24 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Vivado\projects\CSCI460\vitis_workspace\temp_xsdb_launch_script.tcl
+20:58:27 INFO  : XSCT server has started successfully.
+20:58:27 INFO  : Successfully done setting XSCT server connection channel  
+20:58:27 INFO  : plnx-install-location is set to ''
+20:58:27 INFO  : Successfully done setting workspace for the tool. 
+20:58:30 INFO  : Registering command handlers for Vitis TCF services
+20:58:31 INFO  : Successfully done query RDI_DATADIR 
+21:04:46 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Vivado\projects\CSCI460\vitis_workspace\temp_xsdb_launch_script.tcl
+21:04:49 INFO  : XSCT server has started successfully.
+21:04:49 INFO  : plnx-install-location is set to ''
+21:04:49 INFO  : Successfully done setting XSCT server connection channel  
+21:04:49 INFO  : Successfully done setting workspace for the tool. 
+21:04:53 INFO  : Successfully done query RDI_DATADIR 
+21:04:55 INFO  : Registering command handlers for Vitis TCF services
+21:07:38 INFO  : Checking for BSP changes to sync application flags for project 'csci460_test_01'...
+21:13:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:13:58 INFO  : Jtag cable 'Digilent Arty 210319755297A' is selected.
+21:13:58 INFO  : 'jtag frequency' command is executed.
+21:13:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319755297A" && level==0} -index 0' command is executed.
+21:14:00 INFO  : FPGA configured successfully with bitstream "C:/Vivado/projects/CSCI460/vitis_workspace/csci460_test_01/_ide/bitstream/arty_microblaze_01_wrapper.bit"
+21:14:00 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:14:00 INFO  : Context for processor 'microblaze_0' is selected.
+21:14:00 INFO  : System reset is completed.
+21:14:03 INFO  : 'after 3000' command is executed.
+21:14:04 INFO  : Context for processor 'microblaze_0' is selected.
+21:14:04 INFO  : The application 'C:/Vivado/projects/CSCI460/vitis_workspace/csci460_test_01/Debug/csci460_test_01.elf' is downloaded to processor 'microblaze_0'.
+21:14:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319755297A" && level==0} -index 0
+fpga -file C:/Vivado/projects/CSCI460/vitis_workspace/csci460_test_01/_ide/bitstream/arty_microblaze_01_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Vivado/projects/CSCI460/vitis_workspace/csci460_test_01/Debug/csci460_test_01.elf
+----------------End of Script----------------
+
+21:14:04 INFO  : Memory regions updated for context PA
+21:14:04 INFO  : Memory regions updated for context PA
+21:14:05 INFO  : Context for processor 'microblaze_0' is selected.
+21:14:05 INFO  : 'con' command is executed.
+21:14:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+21:14:05 INFO  : Launch script is exported to file 'C:\Vivado\projects\CSCI460\vitis_workspace\.sdk\launch_scripts\single_application_debug\debugger_csci460_test_01-default.tcl'
+21:14:31 INFO  : Disconnected from the channel tcfchan#2.
+21:14:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:14:35 INFO  : Jtag cable 'Digilent Arty 210319755297A' is selected.
+21:14:35 INFO  : 'jtag frequency' command is executed.
+21:14:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319755297A" && level==0} -index 0' command is executed.
+21:14:36 INFO  : FPGA configured successfully with bitstream "C:/Vivado/projects/CSCI460/vitis_workspace/csci460_test_01/_ide/bitstream/arty_microblaze_01_wrapper.bit"
+21:14:36 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:14:39 INFO  : Context for processor 'microblaze_0' is selected.
+21:14:39 INFO  : System reset is completed.
+21:14:42 INFO  : 'after 3000' command is executed.
+21:14:42 INFO  : Context for processor 'microblaze_0' is selected.
+21:14:42 INFO  : The application 'C:/Vivado/projects/CSCI460/vitis_workspace/csci460_test_01/Debug/csci460_test_01.elf' is downloaded to processor 'microblaze_0'.
+21:14:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319755297A" && level==0} -index 0
+fpga -file C:/Vivado/projects/CSCI460/vitis_workspace/csci460_test_01/_ide/bitstream/arty_microblaze_01_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Vivado/projects/CSCI460/vitis_workspace/csci460_test_01/Debug/csci460_test_01.elf
+----------------End of Script----------------
+
+21:14:42 INFO  : Memory regions updated for context PA
+21:14:42 INFO  : Memory regions updated for context PA
+21:14:42 INFO  : Context for processor 'microblaze_0' is selected.
+21:14:42 INFO  : 'con' command is executed.
+21:14:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+21:14:42 INFO  : Launch script is exported to file 'C:\Vivado\projects\CSCI460\vitis_workspace\.sdk\launch_scripts\single_application_debug\debugger_csci460_test_01-default.tcl'
+21:14:53 INFO  : Disconnected from the channel tcfchan#3.
+21:14:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:14:59 INFO  : Jtag cable 'Digilent Arty 210319755297A' is selected.
+21:14:59 INFO  : 'jtag frequency' command is executed.
+21:14:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319755297A" && level==0} -index 0' command is executed.
+21:15:00 INFO  : FPGA configured successfully with bitstream "C:/Vivado/projects/CSCI460/vitis_workspace/csci460_test_01/_ide/bitstream/arty_microblaze_01_wrapper.bit"
+21:15:00 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:15:00 INFO  : Context for processor 'microblaze_0' is selected.
+21:15:00 INFO  : System reset is completed.
+21:15:03 INFO  : 'after 3000' command is executed.
+21:15:03 INFO  : Context for processor 'microblaze_0' is selected.
+21:15:03 INFO  : The application 'C:/Vivado/projects/CSCI460/vitis_workspace/csci460_test_01/Debug/csci460_test_01.elf' is downloaded to processor 'microblaze_0'.
+21:15:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319755297A" && level==0} -index 0
+fpga -file C:/Vivado/projects/CSCI460/vitis_workspace/csci460_test_01/_ide/bitstream/arty_microblaze_01_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Vivado/projects/CSCI460/vitis_workspace/csci460_test_01/Debug/csci460_test_01.elf
+----------------End of Script----------------
+
+21:15:04 INFO  : Memory regions updated for context PA
+21:15:04 INFO  : Memory regions updated for context PA
+21:15:04 INFO  : Context for processor 'microblaze_0' is selected.
+21:15:04 INFO  : 'con' command is executed.
+21:15:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+21:15:04 INFO  : Launch script is exported to file 'C:\Vivado\projects\CSCI460\vitis_workspace\.sdk\launch_scripts\single_application_debug\debugger_csci460_test_01-default.tcl'
+21:18:40 INFO  : Checking for BSP changes to sync application flags for project 'csci460_test_02_system'...
+21:19:21 INFO  : Disconnected from the channel tcfchan#4.
+21:19:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:19:23 INFO  : Jtag cable 'Digilent Arty 210319755297A' is selected.
+21:19:23 INFO  : 'jtag frequency' command is executed.
+21:19:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319755297A" && level==0} -index 0' command is executed.
+21:19:24 INFO  : FPGA configured successfully with bitstream "C:/Vivado/projects/CSCI460/vitis_workspace/csci460_test_02_system/_ide/bitstream/arty_microblaze_01_wrapper.bit"
+21:19:24 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:19:24 INFO  : Context for processor 'microblaze_0' is selected.
+21:19:24 INFO  : System reset is completed.
+21:19:27 INFO  : 'after 3000' command is executed.
+21:19:27 INFO  : Context for processor 'microblaze_0' is selected.
+21:19:28 INFO  : The application 'C:/Vivado/projects/CSCI460/vitis_workspace/csci460_test_02_system/Debug/csci460_test_02_system.elf' is downloaded to processor 'microblaze_0'.
+21:19:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319755297A" && level==0} -index 0
+fpga -file C:/Vivado/projects/CSCI460/vitis_workspace/csci460_test_02_system/_ide/bitstream/arty_microblaze_01_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Vivado/projects/CSCI460/vitis_workspace/csci460_test_02_system/Debug/csci460_test_02_system.elf
+----------------End of Script----------------
+
+21:19:28 INFO  : Memory regions updated for context PA
+21:19:28 INFO  : Memory regions updated for context PA
+21:19:28 INFO  : Context for processor 'microblaze_0' is selected.
+21:19:28 INFO  : 'con' command is executed.
+21:19:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+21:19:28 INFO  : Launch script is exported to file 'C:\Vivado\projects\CSCI460\vitis_workspace\.sdk\launch_scripts\single_application_debug\debugger_csci460_test_02-default.tcl'
+21:21:29 INFO  : Disconnected from the channel tcfchan#6.
+21:21:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:21:33 INFO  : Jtag cable 'Digilent Arty 210319755297A' is selected.
+21:21:33 INFO  : 'jtag frequency' command is executed.
+21:21:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319755297A" && level==0} -index 0' command is executed.
+21:21:35 INFO  : FPGA configured successfully with bitstream "C:/Vivado/projects/CSCI460/vitis_workspace/csci460_test_02_system/_ide/bitstream/arty_microblaze_01_wrapper.bit"
+21:21:35 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:21:35 INFO  : Context for processor 'microblaze_0' is selected.
+21:21:35 INFO  : System reset is completed.
+21:21:38 INFO  : 'after 3000' command is executed.
+21:21:38 INFO  : Context for processor 'microblaze_0' is selected.
+21:21:38 INFO  : The application 'C:/Vivado/projects/CSCI460/vitis_workspace/csci460_test_02_system/Debug/csci460_test_02_system.elf' is downloaded to processor 'microblaze_0'.
+21:21:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319755297A" && level==0} -index 0
+fpga -file C:/Vivado/projects/CSCI460/vitis_workspace/csci460_test_02_system/_ide/bitstream/arty_microblaze_01_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Vivado/projects/CSCI460/vitis_workspace/csci460_test_02_system/Debug/csci460_test_02_system.elf
+----------------End of Script----------------
+
+21:21:38 INFO  : Memory regions updated for context PA
+21:21:38 INFO  : Memory regions updated for context PA
+21:21:38 INFO  : Context for processor 'microblaze_0' is selected.
+21:21:39 INFO  : 'con' command is executed.
+21:21:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+21:21:39 INFO  : Launch script is exported to file 'C:\Vivado\projects\CSCI460\vitis_workspace\.sdk\launch_scripts\single_application_debug\debugger_csci460_test_02-default.tcl'
+22:14:26 INFO  : Disconnected from the channel tcfchan#7.

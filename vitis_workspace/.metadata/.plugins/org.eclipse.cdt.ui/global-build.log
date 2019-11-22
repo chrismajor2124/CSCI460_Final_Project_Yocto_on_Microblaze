@@ -1,39 +1,6 @@
-Nothing to build in platform 'arty_microblaze_01_wrapper'
-
-22:32:55 **** Incremental Build of configuration Debug for project csci460_test_app ****
-make all 
-make: Nothing to be done for 'all'.
-22:33:05 **** Clean-only build of project arty_microblaze_01_wrapper ****
-buildplatform.bat 54467 arty_microblaze_01_wrapper clean 
-xsct% XSDB Server Channel: tcfchan#9
-Cleaning the BSP for domain  - standalone_domain
-make -C microblaze_0/libsrc/bram_v4_3/src -s clean 
-
-make -C microblaze_0/libsrc/cpu_v2_10/src -s clean 
-
-make -C microblaze_0/libsrc/emaclite_v4_4/src -s clean 
-
-make -C microblaze_0/libsrc/gpio_v4_5/src -s clean 
-
-make -C microblaze_0/libsrc/intc_v3_10/src -s clean 
-
-make -C microblaze_0/libsrc/spi_v4_5/src -s clean 
-
-make -C microblaze_0/libsrc/standalone_v7_1/src -s clean 
-
-make -C microblaze_0/libsrc/tmrctr_v4_5/src -s clean 
-
-make -C microblaze_0/libsrc/uartlite_v3_3/src -s clean 
-
-rm -f microblaze_0/lib/libxil.a
-
-22:33:08 **** Clean-only build of configuration Debug for project csci460_test_app ****
-make clean 
-rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  csci460_test_app.elf.size  csci460_test_app.elf
-' '
-22:33:09 **** Build of project arty_microblaze_01_wrapper ****
-buildplatform.bat 54467 arty_microblaze_01_wrapper  
-XSDB Server Channel: tcfchan#10
+21:18:13 **** Build of project arty_microblaze_01_wrapper_2 ****
+buildplatform.bat 56873 arty_microblaze_01_wrapper_2  
+XSDB Server Channel: tcfchan#5
 Building the BSP Library for domain  - standalone_domain on processor microblaze_0
 "Running Make include in microblaze_0/libsrc/bram_v4_3/src"
 
@@ -64,6 +31,12 @@ R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAG
 make -C microblaze_0/libsrc/intc_v3_10/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
 ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
  -Wextra"
+
+"Running Make include in microblaze_0/libsrc/lwip211_v1_1/src"
+
+make -C microblaze_0/libsrc/lwip211_v1_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wa
+ll -Wextra"
 
 "Running Make include in microblaze_0/libsrc/spi_v4_5/src"
 
@@ -130,6 +103,18 @@ extra"
 
 "Compiling intc"
 
+"Running Make libs in microblaze_0/libsrc/lwip211_v1_1/src"
+
+make -C microblaze_0/libsrc/lwip211_v1_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+-Wextra"
+
+"Compiling lwip src and adapter files"
+
+contrib/ports/xilinx/netif/xadapter.c: In function 'eth_link_detect':
+contrib/ports/xilinx/netif/xadapter.c:364:8: warning: unused variable 'link_speed' [-Wunused-variable]
+  u32_t link_speed, phy_link_status;
+        ^~~~~~~~~~
 "Running Make libs in microblaze_0/libsrc/spi_v4_5/src"
 
 make -C microblaze_0/libsrc/spi_v4_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_FL
@@ -167,29 +152,74 @@ ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLA
 
 'Finished building libraries'
 
-22:33:26 **** Build of configuration Debug for project csci460_test_app ****
+21:18:40 **** Build of configuration Debug for project csci460_test_02_system ****
 make all 
-'Building file: ../src/helloworld.c'
+'Building file: ../src/echo.c'
 'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -IC:/Vivado/projects/CSCI460/vitis_workspace/arty_microblaze_01_wrapper/export/arty_microblaze_01_wrapper/sw/arty_microblaze_01_wrapper/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-'Finished building: ../src/helloworld.c'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/echo.o" -IC:/Vivado/projects/CSCI460/vitis_workspace/arty_microblaze_01_wrapper_2/export/arty_microblaze_01_wrapper_2/sw/arty_microblaze_01_wrapper_2/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/echo.d" -MT"src/echo.o" -o "src/echo.o" "../src/echo.c"
+'Finished building: ../src/echo.c'
+' '
+'Building file: ../src/i2c_access.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c_access.o" -IC:/Vivado/projects/CSCI460/vitis_workspace/arty_microblaze_01_wrapper_2/export/arty_microblaze_01_wrapper_2/sw/arty_microblaze_01_wrapper_2/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/i2c_access.d" -MT"src/i2c_access.o" -o "src/i2c_access.o" "../src/i2c_access.c"
+'Finished building: ../src/i2c_access.c'
+' '
+'Building file: ../src/iic_phyreset.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_phyreset.o" -IC:/Vivado/projects/CSCI460/vitis_workspace/arty_microblaze_01_wrapper_2/export/arty_microblaze_01_wrapper_2/sw/arty_microblaze_01_wrapper_2/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/iic_phyreset.d" -MT"src/iic_phyreset.o" -o "src/iic_phyreset.o" "../src/iic_phyreset.c"
+'Finished building: ../src/iic_phyreset.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -IC:/Vivado/projects/CSCI460/vitis_workspace/arty_microblaze_01_wrapper_2/export/arty_microblaze_01_wrapper_2/sw/arty_microblaze_01_wrapper_2/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
 ' '
 'Building file: ../src/platform.c'
 'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -IC:/Vivado/projects/CSCI460/vitis_workspace/arty_microblaze_01_wrapper/export/arty_microblaze_01_wrapper/sw/arty_microblaze_01_wrapper/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -IC:/Vivado/projects/CSCI460/vitis_workspace/arty_microblaze_01_wrapper_2/export/arty_microblaze_01_wrapper_2/sw/arty_microblaze_01_wrapper_2/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
 'Finished building: ../src/platform.c'
 ' '
-'Building target: csci460_test_app.elf'
+'Building file: ../src/platform_mb.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_mb.o" -IC:/Vivado/projects/CSCI460/vitis_workspace/arty_microblaze_01_wrapper_2/export/arty_microblaze_01_wrapper_2/sw/arty_microblaze_01_wrapper_2/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform_mb.d" -MT"src/platform_mb.o" -o "src/platform_mb.o" "../src/platform_mb.c"
+'Finished building: ../src/platform_mb.c'
+' '
+'Building file: ../src/platform_ppc.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_ppc.o" -IC:/Vivado/projects/CSCI460/vitis_workspace/arty_microblaze_01_wrapper_2/export/arty_microblaze_01_wrapper_2/sw/arty_microblaze_01_wrapper_2/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform_ppc.d" -MT"src/platform_ppc.o" -o "src/platform_ppc.o" "../src/platform_ppc.c"
+'Finished building: ../src/platform_ppc.c'
+' '
+'Building file: ../src/platform_zynq.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_zynq.o" -IC:/Vivado/projects/CSCI460/vitis_workspace/arty_microblaze_01_wrapper_2/export/arty_microblaze_01_wrapper_2/sw/arty_microblaze_01_wrapper_2/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform_zynq.d" -MT"src/platform_zynq.o" -o "src/platform_zynq.o" "../src/platform_zynq.c"
+'Finished building: ../src/platform_zynq.c'
+' '
+'Building file: ../src/platform_zynqmp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_zynqmp.o" -IC:/Vivado/projects/CSCI460/vitis_workspace/arty_microblaze_01_wrapper_2/export/arty_microblaze_01_wrapper_2/sw/arty_microblaze_01_wrapper_2/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform_zynqmp.d" -MT"src/platform_zynqmp.o" -o "src/platform_zynqmp.o" "../src/platform_zynqmp.c"
+'Finished building: ../src/platform_zynqmp.c'
+' '
+'Building file: ../src/sfp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sfp.o" -IC:/Vivado/projects/CSCI460/vitis_workspace/arty_microblaze_01_wrapper_2/export/arty_microblaze_01_wrapper_2/sw/arty_microblaze_01_wrapper_2/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sfp.d" -MT"src/sfp.o" -o "src/sfp.o" "../src/sfp.c"
+'Finished building: ../src/sfp.c'
+' '
+'Building file: ../src/si5324.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/si5324.o" -IC:/Vivado/projects/CSCI460/vitis_workspace/arty_microblaze_01_wrapper_2/export/arty_microblaze_01_wrapper_2/sw/arty_microblaze_01_wrapper_2/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/si5324.d" -MT"src/si5324.o" -o "src/si5324.o" "../src/si5324.c"
+'Finished building: ../src/si5324.c'
+' '
+'Building target: csci460_test_02_system.elf'
 'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Vivado/projects/CSCI460/vitis_workspace/arty_microblaze_01_wrapper/export/arty_microblaze_01_wrapper/sw/arty_microblaze_01_wrapper/standalone_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "csci460_test_app.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: csci460_test_app.elf'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Vivado/projects/CSCI460/vitis_workspace/arty_microblaze_01_wrapper_2/export/arty_microblaze_01_wrapper_2/sw/arty_microblaze_01_wrapper_2/standalone_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "csci460_test_02_system.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: csci460_test_02_system.elf'
 ' '
 'Invoking: MicroBlaze Print Size'
-mb-size csci460_test_app.elf  |tee "csci460_test_app.elf.size"
+mb-size csci460_test_02_system.elf  |tee "csci460_test_02_system.elf.size"
    text	   data	    bss	    dec	    hex	filename
-   2740	    336	   3108	   6184	   1828	csci460_test_app.elf
-'Finished building: csci460_test_app.elf.size'
+ 112152	   1808	3962320	4076280	 3e32f8	csci460_test_02_system.elf
+'Finished building: csci460_test_02_system.elf.size'
 ' '
-22:33:28 **** Build of configuration Debug for project csci460_test_app_system ****
+21:18:47 **** Build of configuration Debug for project csci460_test_02_system_system ****
 make all 
 Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."

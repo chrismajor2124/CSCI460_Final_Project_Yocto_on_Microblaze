@@ -4,3 +4,12 @@ timestamp=[2019-11-20 22:20:04], mode=APP_CREATION, duration=0:00:09.214, durati
 timestamp=[2019-11-20 22:22:45], mode=PLATFORM_GENERATION, duration=0:00:19.260, duration_ms=19260, data={name=arty_microblaze_01_wrapper}
 timestamp=[2019-11-20 22:33:08], mode=PLATFORM_GENERATION, duration=0:00:02.857, duration_ms=2857, data={name=arty_microblaze_01_wrapper}
 timestamp=[2019-11-20 22:33:26], mode=PLATFORM_GENERATION, duration=0:00:17.708, duration_ms=17708, data={name=arty_microblaze_01_wrapper}
+timestamp=[2019-11-21 20:58:27], mode=WORKBENCH_START, duration=0:00:12.707, duration_ms=12707, data={}
+timestamp=[2019-11-21 20:58:28], mode=WORKBENCH_UI_INIT, duration=0:00:01.396, duration_ms=1396, data={editors_count=3, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,arty_microblaze_01_wrapper,csci460_test_app,csci460_test_app_system}
+timestamp=[2019-11-21 21:03:26], mode=APP_CREATION, duration=0:00:01.435, duration_ms=1435, data={name=csci460_test_app_02, project_type=sdk, os=standalone, processor=microblaze_0, runtime=C/C++, platform=arty_microblaze_01_wrapper, application_type=application}
+timestamp=[2019-11-21 21:04:50], mode=WORKBENCH_START, duration=0:00:07.395, duration_ms=7395, data={}
+timestamp=[2019-11-21 21:04:51], mode=WORKBENCH_UI_INIT, duration=0:00:01.030, duration_ms=1030, data={editors_count=0, platform_editors_count=0, projects_count=6, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,arty_microblaze_01_wrapper,csci460_test_app,csci460_test_app_02,csci460_test_app_02_system,csci460_test_app_system}
+timestamp=[2019-11-21 21:05:46], mode=APP_CREATION, duration=0:00:05.578, duration_ms=5578, data={name=csci460_test_01, project_type=sdk, os=standalone, processor=microblaze, runtime=cpp, platform=arty_microblaze_01_wrapper_1, application_type=application}
+timestamp=[2019-11-21 21:07:38], mode=PLATFORM_GENERATION, duration=0:00:16.648, duration_ms=16648, data={name=arty_microblaze_01_wrapper_1}
+timestamp=[2019-11-21 21:16:35], mode=APP_CREATION, duration=0:00:03.302, duration_ms=3302, data={name=csci460_test_02_system, project_type=sdk, os=standalone, processor=microblaze, runtime=cpp, platform=arty_microblaze_01_wrapper_2, application_type=application}
+timestamp=[2019-11-21 21:18:40], mode=PLATFORM_GENERATION, duration=0:00:26.549, duration_ms=26549, data={name=arty_microblaze_01_wrapper_2}

@@ -2,348 +2,70 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Wed Nov 20 21:46:36 2019
-# Process ID: 9136
+# Start of session at: Thu Nov 21 20:09:27 2019
+# Process ID: 8532
 # Current directory: C:/Vivado/projects/CSCI460
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10720 C:\Vivado\projects\CSCI460\arty_linux.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11136 C:\Vivado\projects\CSCI460\arty_linux.xpr
 # Log file: C:/Vivado/projects/CSCI460/vivado.log
 # Journal file: C:/Vivado/projects/CSCI460\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Vivado/projects/CSCI460/arty_linux.xpr
-INFO: [Project 1-313] Project file moved from 'C:/Vivado/projects/CSCI460_Final_Project_Yocto_on_Microblaze/arty_linux' since last save.
 Scanning sources...
 Finished scanning sources
-WARNING: [filemgmt 56-2] Board Part Repository Path: Could not find the directory 'C:/../../../AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store', nor could it be found using path 'C:/../../AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store'.
-WARNING: [filemgmt 56-2] Board Part Repository Path: Could not find the directory 'C:/../../../../../Xilinx/Vivado/2019.1/data/boards/board_files', nor could it be found using path 'C:/../../../../Xilinx/Vivado/2019.1/data/boards/board_files'.
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/../../../AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store'.
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/../../../../../Xilinx/Vivado/2019.1/data/boards/board_files'.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
-open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 1081.977 ; gain = 177.652
+open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:16 . Memory (MB): peak = 1060.891 ; gain = 392.246
 update_compile_order -fileset sources_1
 open_bd_design {C:/Vivado/projects/CSCI460/arty_linux.srcs/sources_1/bd/arty_microblaze_01/arty_microblaze_01.bd}
 Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:mig_7series:4.2 - mig_7series_0
+Adding component instance block -- xilinx.com:ip:microblaze:11.0 - microblaze_0
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - microblaze_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_intc:4.1 - microblaze_0_axi_intc
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - microblaze_0_xlconcat
+Adding component instance block -- xilinx.com:ip:mdm:3.2 - mdm_1
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_mig_7series_0_83M
+Adding component instance block -- xilinx.com:ip:axi_ethernetlite:3.0 - axi_ethernetlite_0
+Adding component instance block -- xilinx.com:ip:axi_quad_spi:3.2 - axi_quad_spi_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_1
+Adding component instance block -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding component instance block -- xilinx.com:ip:axi_timer:2.0 - axi_timer_0
 Successfully read diagram <arty_microblaze_01> from BD file <C:/Vivado/projects/CSCI460/arty_linux.srcs/sources_1/bd/arty_microblaze_01/arty_microblaze_01.bd>
-open_bd_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1081.977 ; gain = 0.000
-startgroup
-create_bd_cell -type ip -vlnv xilinx.com:ip:mig_7series:4.2 mig_7series_0
-apply_board_connection -board_interface "ddr3_sdram" -ip_intf "mig_7series_0/mig_ddr_interface" -diagram "arty_microblaze_01" 
-INFO: [board_interface 100-100] current_bd_design arty_microblaze_01
-INFO: [board_interface 100-100] set_property CONFIG.BOARD_MIG_PARAM ddr3_sdram [get_bd_cells -quiet /mig_7series_0]
-INFO: [board_interface 100-100] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:ddrx_rtl:1.0 ddr3_sdram
-INFO: [board_interface 100-100] connect_bd_intf_net /ddr3_sdram /mig_7series_0/DDR3
-INFO: [board_interface 100-100] create_bd_port -dir I clk_ref_i -type clk
-WARNING: [BD 5-670] It is required to provide a frequency value for a user created input clock port. Please use the <-freq_hz $freq_val> argument of the create_bd_port command. ie create_bd_port -dir I -type clk -freq_hz 100000000 clkin
-INFO: [board_interface 100-100] connect_bd_net /clk_ref_i /mig_7series_0/clk_ref_i
-INFO: [board_interface 100-100] create_bd_port -dir I sys_clk_i -type clk
-WARNING: [BD 5-670] It is required to provide a frequency value for a user created input clock port. Please use the <-freq_hz $freq_val> argument of the create_bd_port command. ie create_bd_port -dir I -type clk -freq_hz 100000000 clkin
-INFO: [board_interface 100-100] connect_bd_net /sys_clk_i /mig_7series_0/sys_clk_i
-apply_board_connection: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1264.203 ; gain = 146.035
-endgroup
-set_property location {0.5 -156 -69} [get_bd_cells mig_7series_0]
-regenerate_bd_layout -routing
-set_property location {2 341 353} [get_bd_cells clk_wiz_0]
-regenerate_bd_layout -routing
-delete_bd_objs [get_bd_nets clk_ref_i_1] [get_bd_ports clk_ref_i]
-delete_bd_objs [get_bd_nets sys_clk_i_1] [get_bd_ports sys_clk_i]
-set_property location {-16 85} [get_bd_ports sys_clock]
-set_property location {-25 261} [get_bd_ports sys_clock]
-set_property location {-19 231} [get_bd_ports reset]
-set_property location {2 397 292} [get_bd_cells clk_wiz_0]
-set_property location {491 288} [get_bd_ports eth_ref_clk]
-connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins mig_7series_0/sys_clk_i]
-connect_bd_net [get_bd_pins clk_wiz_0/clk_out2] [get_bd_pins mig_7series_0/clk_ref_i]
-connect_bd_net [get_bd_ports reset] [get_bd_pins mig_7series_0/sys_rst]
-startgroup
-create_bd_cell -type ip -vlnv xilinx.com:ip:microblaze:11.0 microblaze_0
-endgroup
-apply_bd_automation -rule xilinx.com:bd_rule:microblaze -config { axi_intc {1} axi_periph {Enabled} cache {16KB} clk {/mig_7series_0/ui_clk (83 MHz)} debug_module {Debug Only} ecc {None} local_mem {64KB} preset {None}}  [get_bd_cells microblaze_0]
-startgroup
-apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/mig_7series_0/ui_clk (83 MHz)} Clk_slave {/mig_7series_0/ui_clk (83 MHz)} Clk_xbar {/mig_7series_0/ui_clk (83 MHz)} Master {/microblaze_0/M_AXI_DC} Slave {/microblaze_0_axi_intc/s_axi} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins microblaze_0/M_AXI_DC]
-apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/mig_7series_0/ui_clk (83 MHz)} Clk_slave {/mig_7series_0/ui_clk (83 MHz)} Clk_xbar {/mig_7series_0/ui_clk (83 MHz)} Master {/microblaze_0/M_AXI_IC} Slave {/microblaze_0_axi_intc/s_axi} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins microblaze_0/M_AXI_IC]
-Slave segment </microblaze_0_axi_intc/S_AXI/Reg> is being mapped into address space </microblaze_0/Instruction> at <0x4120_0000 [ 64K ]>
-apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/mig_7series_0/ui_clk (83 MHz)} Clk_slave {/mig_7series_0/ui_clk (83 MHz)} Clk_xbar {/mig_7series_0/ui_clk (83 MHz)} Master {/microblaze_0 (Cached)} Slave {/mig_7series_0/S_AXI} ddr_seg {Auto} intc_ip {New AXI SmartConnect} master_apm {0}}  [get_bd_intf_pins mig_7series_0/S_AXI]
-Slave segment </mig_7series_0/memmap/memaddr> is being mapped into address space </microblaze_0/Data> at <0x8000_0000 [ 256M ]>
-Slave segment </mig_7series_0/memmap/memaddr> is being mapped into address space </microblaze_0/Instruction> at <0x8000_0000 [ 256M ]>
-endgroup
-startgroup
-create_bd_cell -type ip -vlnv xilinx.com:ip:axi_ethernetlite:3.0 axi_ethernetlite_0
-apply_board_connection -board_interface "eth_mii" -ip_intf "axi_ethernetlite_0/MII" -diagram "arty_microblaze_01" 
-INFO: [board_interface 100-100] current_bd_design arty_microblaze_01
-INFO: [board_interface 100-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells -quiet /axi_ethernetlite_0]
-INFO: [board_interface 100-100] set_property CONFIG.MII_BOARD_INTERFACE eth_mii [get_bd_cells -quiet /axi_ethernetlite_0]
-INFO: [board_interface 100-100] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:mii_rtl:1.0 eth_mii
-INFO: [board_interface 100-100] connect_bd_intf_net /eth_mii /axi_ethernetlite_0/MII
-apply_board_connection -board_interface "eth_mdio_mdc" -ip_intf "axi_ethernetlite_0/MDIO" -diagram "arty_microblaze_01" 
-INFO: [board_interface 100-100] current_bd_design arty_microblaze_01
-INFO: [board_interface 100-100] set_property CONFIG.MDIO_BOARD_INTERFACE eth_mdio_mdc [get_bd_cells -quiet /axi_ethernetlite_0]
-INFO: [board_interface 100-100] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:mdio_rtl:1.0 eth_mdio_mdc
-INFO: [board_interface 100-100] connect_bd_intf_net /eth_mdio_mdc /axi_ethernetlite_0/MDIO
-WARNING: [board_interface 100-100] The IP interface axi_ethernetlite_0/MDIO has been connected but the IP has not been configured to match your board.  Please configure this IP as necessary to meet your requirements.
-endgroup
-startgroup
-create_bd_cell -type ip -vlnv xilinx.com:ip:axi_quad_spi:3.2 axi_quad_spi_0
-apply_board_connection -board_interface "qspi_flash" -ip_intf "axi_quad_spi_0/SPI_0" -diagram "arty_microblaze_01" 
-INFO: [board_interface 100-100] current_bd_design arty_microblaze_01
-INFO: [board_interface 100-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells -quiet /axi_quad_spi_0]
-INFO: [board_interface 100-100] set_property CONFIG.QSPI_BOARD_INTERFACE qspi_flash [get_bd_cells -quiet /axi_quad_spi_0]
-INFO: [board_interface 100-100] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:spi_rtl:1.0 qspi_flash
-INFO: [board_interface 100-100] connect_bd_intf_net /qspi_flash /axi_quad_spi_0/SPI_0
-endgroup
-startgroup
-create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
-apply_board_connection -board_interface "led_4bits" -ip_intf "axi_gpio_0/GPIO" -diagram "arty_microblaze_01" 
-INFO: [board_interface 100-100] current_bd_design arty_microblaze_01
-INFO: [board_interface 100-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells -quiet /axi_gpio_0]
-INFO: [board_interface 100-100] set_property CONFIG.GPIO_BOARD_INTERFACE led_4bits [get_bd_cells -quiet /axi_gpio_0]
-INFO: [board_interface 100-100] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 led_4bits
-INFO: [board_interface 100-100] connect_bd_intf_net /led_4bits /axi_gpio_0/GPIO
-endgroup
-set_property location {3.5 1074 -297} [get_bd_cells microblaze_0_axi_intc]
-apply_board_connection -board_interface "push_buttons_4bits" -ip_intf "axi_gpio_0/GPIO2" -diagram "arty_microblaze_01" 
-INFO: [board_interface 100-100] current_bd_design arty_microblaze_01
-INFO: [board_interface 100-100] set_property CONFIG.GPIO2_BOARD_INTERFACE push_buttons_4bits [get_bd_cells -quiet /axi_gpio_0]
-INFO: [board_interface 100-100] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 push_buttons_4bits
-INFO: [board_interface 100-100] connect_bd_intf_net /push_buttons_4bits /axi_gpio_0/GPIO2
-startgroup
-create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_1
-apply_board_connection -board_interface "rgb_led" -ip_intf "axi_gpio_1/GPIO" -diagram "arty_microblaze_01" 
-INFO: [board_interface 100-100] current_bd_design arty_microblaze_01
-INFO: [board_interface 100-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells -quiet /axi_gpio_1]
-INFO: [board_interface 100-100] set_property CONFIG.GPIO_BOARD_INTERFACE rgb_led [get_bd_cells -quiet /axi_gpio_1]
-INFO: [board_interface 100-100] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 rgb_led
-INFO: [board_interface 100-100] connect_bd_intf_net /rgb_led /axi_gpio_1/GPIO
-endgroup
-apply_board_connection -board_interface "dip_switches_4bits" -ip_intf "axi_gpio_1/GPIO2" -diagram "arty_microblaze_01" 
-INFO: [board_interface 100-100] current_bd_design arty_microblaze_01
-INFO: [board_interface 100-100] set_property CONFIG.GPIO2_BOARD_INTERFACE dip_switches_4bits [get_bd_cells -quiet /axi_gpio_1]
-INFO: [board_interface 100-100] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 dip_switches_4bits
-INFO: [board_interface 100-100] connect_bd_intf_net /dip_switches_4bits /axi_gpio_1/GPIO2
-startgroup
-create_bd_cell -type ip -vlnv xilinx.com:ip:axi_uartlite:2.0 axi_uartlite_0
-apply_board_connection -board_interface "usb_uart" -ip_intf "axi_uartlite_0/UART" -diagram "arty_microblaze_01" 
-INFO: [board_interface 100-100] current_bd_design arty_microblaze_01
-INFO: [board_interface 100-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells -quiet /axi_uartlite_0]
-INFO: [board_interface 100-100] set_property CONFIG.UARTLITE_BOARD_INTERFACE usb_uart [get_bd_cells -quiet /axi_uartlite_0]
-INFO: [board_interface 100-100] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:uart_rtl:1.0 usb_uart
-INFO: [board_interface 100-100] connect_bd_intf_net /usb_uart /axi_uartlite_0/UART
-endgroup
-startgroup
-create_bd_cell -type ip -vlnv xilinx.com:ip:axi_timer:2.0 axi_timer_0
-endgroup
-startgroup
-apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/mig_7series_0/ui_clk (83 MHz)} Clk_slave {Auto} Clk_xbar {/mig_7series_0/ui_clk (83 MHz)} Master {/microblaze_0 (Periph)} Slave {/axi_ethernetlite_0/S_AXI} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_ethernetlite_0/S_AXI]
-Slave segment </axi_ethernetlite_0/S_AXI/Reg> is being mapped into address space </microblaze_0/Data> at <0x40E0_0000 [ 64K ]>
-Slave segment </axi_ethernetlite_0/S_AXI/Reg> is being mapped into address space </microblaze_0/Instruction> at <0x40E0_0000 [ 64K ]>
-apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/mig_7series_0/ui_clk (83 MHz)} Clk_slave {Auto} Clk_xbar {/mig_7series_0/ui_clk (83 MHz)} Master {/microblaze_0 (Periph)} Slave {/axi_gpio_0/S_AXI} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_gpio_0/S_AXI]
-Slave segment </axi_gpio_0/S_AXI/Reg> is being mapped into address space </microblaze_0/Data> at <0x4000_0000 [ 64K ]>
-Slave segment </axi_gpio_0/S_AXI/Reg> is being mapped into address space </microblaze_0/Instruction> at <0x4000_0000 [ 64K ]>
-apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/mig_7series_0/ui_clk (83 MHz)} Clk_slave {Auto} Clk_xbar {/mig_7series_0/ui_clk (83 MHz)} Master {/microblaze_0 (Periph)} Slave {/axi_gpio_1/S_AXI} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_gpio_1/S_AXI]
-Slave segment </axi_gpio_1/S_AXI/Reg> is being mapped into address space </microblaze_0/Data> at <0x4001_0000 [ 64K ]>
-Slave segment </axi_gpio_1/S_AXI/Reg> is being mapped into address space </microblaze_0/Instruction> at <0x4001_0000 [ 64K ]>
-apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/mig_7series_0/ui_clk (83 MHz)} Clk_slave {Auto} Clk_xbar {/mig_7series_0/ui_clk (83 MHz)} Master {/microblaze_0 (Periph)} Slave {/axi_quad_spi_0/AXI_LITE} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_quad_spi_0/AXI_LITE]
-Slave segment </axi_quad_spi_0/AXI_LITE/Reg> is being mapped into address space </microblaze_0/Data> at <0x44A0_0000 [ 64K ]>
-Slave segment </axi_quad_spi_0/AXI_LITE/Reg> is being mapped into address space </microblaze_0/Instruction> at <0x44A0_0000 [ 64K ]>
-apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/mig_7series_0/ui_clk (83 MHz)} Freq {83} Ref_Clk0 {None} Ref_Clk1 {None} Ref_Clk2 {None}}  [get_bd_pins axi_quad_spi_0/ext_spi_clk]
-apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/mig_7series_0/ui_clk (83 MHz)} Clk_slave {Auto} Clk_xbar {/mig_7series_0/ui_clk (83 MHz)} Master {/microblaze_0 (Periph)} Slave {/axi_timer_0/S_AXI} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_timer_0/S_AXI]
-Slave segment </axi_timer_0/S_AXI/Reg> is being mapped into address space </microblaze_0/Data> at <0x41C0_0000 [ 64K ]>
-Slave segment </axi_timer_0/S_AXI/Reg> is being mapped into address space </microblaze_0/Instruction> at <0x41C0_0000 [ 64K ]>
-apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/mig_7series_0/ui_clk (83 MHz)} Clk_slave {Auto} Clk_xbar {/mig_7series_0/ui_clk (83 MHz)} Master {/microblaze_0 (Periph)} Slave {/axi_uartlite_0/S_AXI} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_uartlite_0/S_AXI]
-Slave segment </axi_uartlite_0/S_AXI/Reg> is being mapped into address space </microblaze_0/Data> at <0x4060_0000 [ 64K ]>
-Slave segment </axi_uartlite_0/S_AXI/Reg> is being mapped into address space </microblaze_0/Instruction> at <0x4060_0000 [ 64K ]>
-endgroup
-startgroup
-set_property -dict [list CONFIG.NUM_PORTS {4}] [get_bd_cells microblaze_0_xlconcat]
-endgroup
-connect_bd_net [get_bd_pins axi_ethernetlite_0/ip2intc_irpt] [get_bd_pins microblaze_0_xlconcat/In0]
-connect_bd_net [get_bd_pins axi_quad_spi_0/ip2intc_irpt] [get_bd_pins microblaze_0_xlconcat/In1]
-connect_bd_net [get_bd_pins axi_uartlite_0/interrupt] [get_bd_pins microblaze_0_xlconcat/In2]
-connect_bd_net [get_bd_pins axi_timer_0/interrupt] [get_bd_pins microblaze_0_xlconcat/In3]
-regenerate_bd_layout -routing
-save_bd_design
-Wrote  : <C:\Vivado\projects\CSCI460\arty_linux.srcs\sources_1\bd\arty_microblaze_01\arty_microblaze_01.bd> 
-Wrote  : <C:/Vivado/projects/CSCI460/arty_linux.srcs/sources_1/bd/arty_microblaze_01/ui/bd_5c7099b9.ui> 
-make_wrapper -files [get_files C:/Vivado/projects/CSCI460/arty_linux.srcs/sources_1/bd/arty_microblaze_01/arty_microblaze_01.bd] -top
-INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /axi_quad_spi_0 
-                   #######################################################################################
-                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
-                   ########################################################################################
-INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /axi_quad_spi_0 
-                   #######################################################################################
-                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
-                   ########################################################################################
-INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
-INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
-INFO: [xilinx.com:ip:microblaze:11.0-16] /microblaze_0: Setting D-cache cacheable area base address C_DCACHE_BASEADDR to 0x80000000 and high address C_DCACHE_HIGHADDR to 0x8FFFFFFF.
-INFO: [xilinx.com:ip:microblaze:11.0-16] /microblaze_0: Setting I-cache cacheable area base address C_ICACHE_BASEADDR to 0x80000000 and high address C_ICACHE_HIGHADDR to 0x8FFFFFFF.
-Wrote  : <C:\Vivado\projects\CSCI460\arty_linux.srcs\sources_1\bd\arty_microblaze_01\arty_microblaze_01.bd> 
-VHDL Output written to : C:/Vivado/projects/CSCI460/arty_linux.srcs/sources_1/bd/arty_microblaze_01/synth/arty_microblaze_01.vhd
-VHDL Output written to : C:/Vivado/projects/CSCI460/arty_linux.srcs/sources_1/bd/arty_microblaze_01/sim/arty_microblaze_01.vhd
-VHDL Output written to : C:/Vivado/projects/CSCI460/arty_linux.srcs/sources_1/bd/arty_microblaze_01/hdl/arty_microblaze_01_wrapper.vhd
-make_wrapper: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1663.434 ; gain = 195.605
-add_files -norecurse C:/Vivado/projects/CSCI460/arty_linux.srcs/sources_1/bd/arty_microblaze_01/hdl/arty_microblaze_01_wrapper.vhd
-update_compile_order -fileset sources_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-INFO: [BD 41-1662] The design 'arty_microblaze_01.bd' is already validated. Therefore parameter propagation will not be re-run.
-Wrote  : <C:\Vivado\projects\CSCI460\arty_linux.srcs\sources_1\bd\arty_microblaze_01\arty_microblaze_01.bd> 
-Wrote  : <C:/Vivado/projects/CSCI460/arty_linux.srcs/sources_1/bd/arty_microblaze_01/ui/bd_5c7099b9.ui> 
-VHDL Output written to : C:/Vivado/projects/CSCI460/arty_linux.srcs/sources_1/bd/arty_microblaze_01/synth/arty_microblaze_01.vhd
-VHDL Output written to : C:/Vivado/projects/CSCI460/arty_linux.srcs/sources_1/bd/arty_microblaze_01/sim/arty_microblaze_01.vhd
-VHDL Output written to : C:/Vivado/projects/CSCI460/arty_linux.srcs/sources_1/bd/arty_microblaze_01/hdl/arty_microblaze_01_wrapper.vhd
-INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block mig_7series_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_intc .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_xlconcat .
-INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
-INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_mig_7series_0_83M .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_ethernetlite_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_quad_spi_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_1 .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Vivado/projects/CSCI460/arty_linux.srcs/sources_1/bd/arty_microblaze_01/ip/arty_microblaze_01_axi_uartlite_0_0/arty_microblaze_01_axi_uartlite_0_0_ooc.xdc'
-INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Vivado/projects/CSCI460/arty_linux.srcs/sources_1/bd/arty_microblaze_01/ip/arty_microblaze_01_axi_timer_0_0/arty_microblaze_01_axi_timer_0_0_ooc.xdc'
-INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_timer_0 .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Vivado/projects/CSCI460/arty_linux.srcs/sources_1/bd/arty_microblaze_01/ip/arty_microblaze_01_auto_pc_7/arty_microblaze_01_auto_pc_7_ooc.xdc'
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/s00_couplers/auto_pc .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Vivado/projects/CSCI460/arty_linux.srcs/sources_1/bd/arty_microblaze_01/ip/arty_microblaze_01_auto_us_0/arty_microblaze_01_auto_us_0_ooc.xdc'
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/s00_couplers/auto_us .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Vivado/projects/CSCI460/arty_linux.srcs/sources_1/bd/arty_microblaze_01/ip/arty_microblaze_01_auto_us_1/arty_microblaze_01_auto_us_1_ooc.xdc'
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/s01_couplers/auto_us .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Vivado/projects/CSCI460/arty_linux.srcs/sources_1/bd/arty_microblaze_01/ip/arty_microblaze_01_auto_us_2/arty_microblaze_01_auto_us_2_ooc.xdc'
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/s02_couplers/auto_us .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Vivado/projects/CSCI460/arty_linux.srcs/sources_1/bd/arty_microblaze_01/ip/arty_microblaze_01_auto_ds_0/arty_microblaze_01_auto_ds_0_ooc.xdc'
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m00_couplers/auto_ds .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Vivado/projects/CSCI460/arty_linux.srcs/sources_1/bd/arty_microblaze_01/ip/arty_microblaze_01_auto_pc_0/arty_microblaze_01_auto_pc_0_ooc.xdc'
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m00_couplers/auto_pc .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Vivado/projects/CSCI460/arty_linux.srcs/sources_1/bd/arty_microblaze_01/ip/arty_microblaze_01_auto_ds_1/arty_microblaze_01_auto_ds_1_ooc.xdc'
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m02_couplers/auto_ds .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Vivado/projects/CSCI460/arty_linux.srcs/sources_1/bd/arty_microblaze_01/ip/arty_microblaze_01_auto_pc_1/arty_microblaze_01_auto_pc_1_ooc.xdc'
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m02_couplers/auto_pc .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Vivado/projects/CSCI460/arty_linux.srcs/sources_1/bd/arty_microblaze_01/ip/arty_microblaze_01_auto_ds_2/arty_microblaze_01_auto_ds_2_ooc.xdc'
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m03_couplers/auto_ds .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Vivado/projects/CSCI460/arty_linux.srcs/sources_1/bd/arty_microblaze_01/ip/arty_microblaze_01_auto_pc_2/arty_microblaze_01_auto_pc_2_ooc.xdc'
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m03_couplers/auto_pc .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Vivado/projects/CSCI460/arty_linux.srcs/sources_1/bd/arty_microblaze_01/ip/arty_microblaze_01_auto_ds_3/arty_microblaze_01_auto_ds_3_ooc.xdc'
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m04_couplers/auto_ds .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Vivado/projects/CSCI460/arty_linux.srcs/sources_1/bd/arty_microblaze_01/ip/arty_microblaze_01_auto_pc_3/arty_microblaze_01_auto_pc_3_ooc.xdc'
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m04_couplers/auto_pc .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Vivado/projects/CSCI460/arty_linux.srcs/sources_1/bd/arty_microblaze_01/ip/arty_microblaze_01_auto_ds_4/arty_microblaze_01_auto_ds_4_ooc.xdc'
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m05_couplers/auto_ds .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Vivado/projects/CSCI460/arty_linux.srcs/sources_1/bd/arty_microblaze_01/ip/arty_microblaze_01_auto_pc_4/arty_microblaze_01_auto_pc_4_ooc.xdc'
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m05_couplers/auto_pc .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Vivado/projects/CSCI460/arty_linux.srcs/sources_1/bd/arty_microblaze_01/ip/arty_microblaze_01_auto_ds_5/arty_microblaze_01_auto_ds_5_ooc.xdc'
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m06_couplers/auto_ds .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Vivado/projects/CSCI460/arty_linux.srcs/sources_1/bd/arty_microblaze_01/ip/arty_microblaze_01_auto_pc_5/arty_microblaze_01_auto_pc_5_ooc.xdc'
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m06_couplers/auto_pc .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Vivado/projects/CSCI460/arty_linux.srcs/sources_1/bd/arty_microblaze_01/ip/arty_microblaze_01_auto_ds_6/arty_microblaze_01_auto_ds_6_ooc.xdc'
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m07_couplers/auto_ds .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Vivado/projects/CSCI460/arty_linux.srcs/sources_1/bd/arty_microblaze_01/ip/arty_microblaze_01_auto_pc_6/arty_microblaze_01_auto_pc_6_ooc.xdc'
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m07_couplers/auto_pc .
-Exporting to file C:/Vivado/projects/CSCI460/arty_linux.srcs/sources_1/bd/arty_microblaze_01/hw_handoff/arty_microblaze_01.hwh
-Generated Block Design Tcl file C:/Vivado/projects/CSCI460/arty_linux.srcs/sources_1/bd/arty_microblaze_01/hw_handoff/arty_microblaze_01_bd.tcl
-Generated Hardware Definition File C:/Vivado/projects/CSCI460/arty_linux.srcs/sources_1/bd/arty_microblaze_01/synth/arty_microblaze_01.hwdef
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP arty_microblaze_01_axi_gpio_0_0, cache-ID = b0743261fc68f88d; cache size = 99.680 MB.
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP arty_microblaze_01_mdm_1_0, cache-ID = b3e6d6878e942293; cache size = 99.681 MB.
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP arty_microblaze_01_axi_ethernetlite_0_0, cache-ID = 7844a776d061cc04; cache size = 99.681 MB.
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP arty_microblaze_01_axi_gpio_1_0, cache-ID = 57d29ef02712debd; cache size = 99.680 MB.
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP arty_microblaze_01_axi_quad_spi_0_0, cache-ID = a925646880eccd7c; cache size = 99.681 MB.
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP arty_microblaze_01_axi_timer_0_0, cache-ID = d22ac8cb19ec6e5e; cache size = 99.680 MB.
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP arty_microblaze_01_axi_uartlite_0_0, cache-ID = fb53b5a5424a9e92; cache size = 99.680 MB.
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP arty_microblaze_01_dlmb_bram_if_cntlr_0, cache-ID = 1bdff8448b70dd38; cache size = 99.680 MB.
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP arty_microblaze_01_dlmb_v10_0, cache-ID = bc8683a3ff782400; cache size = 99.680 MB.
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP arty_microblaze_01_ilmb_bram_if_cntlr_0, cache-ID = 1bdff8448b70dd38; cache size = 99.680 MB.
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP arty_microblaze_01_ilmb_v10_0, cache-ID = bc8683a3ff782400; cache size = 99.680 MB.
-INFO: [IP_Flow 19-5642] Done with IP cache export for multiple IPs
-[Wed Nov 20 21:59:34 2019] Launched arty_microblaze_01_xbar_0_synth_1, arty_microblaze_01_rst_mig_7series_0_83M_0_synth_1, arty_microblaze_01_mig_7series_0_0_synth_1, arty_microblaze_01_auto_pc_3_synth_1, arty_microblaze_01_auto_ds_4_synth_1, arty_microblaze_01_auto_pc_7_synth_1, arty_microblaze_01_auto_us_0_synth_1, arty_microblaze_01_auto_us_1_synth_1, arty_microblaze_01_auto_ds_5_synth_1, arty_microblaze_01_auto_pc_5_synth_1, arty_microblaze_01_auto_pc_4_synth_1, arty_microblaze_01_auto_ds_2_synth_1, arty_microblaze_01_auto_pc_2_synth_1, arty_microblaze_01_auto_ds_3_synth_1, arty_microblaze_01_auto_ds_1_synth_1, arty_microblaze_01_auto_pc_1_synth_1, arty_microblaze_01_auto_us_2_synth_1, arty_microblaze_01_auto_ds_0_synth_1, arty_microblaze_01_auto_pc_0_synth_1, arty_microblaze_01_auto_ds_6_synth_1, arty_microblaze_01_microblaze_0_0_synth_1, arty_microblaze_01_auto_pc_6_synth_1, arty_microblaze_01_lmb_bram_0_synth_1, arty_microblaze_01_microblaze_0_axi_intc_0_synth_1, arty_microblaze_01_clk_wiz_0_0_synth_1, synth_1...
-Run output will be captured here:
-arty_microblaze_01_xbar_0_synth_1: C:/Vivado/projects/CSCI460/arty_linux.runs/arty_microblaze_01_xbar_0_synth_1/runme.log
-arty_microblaze_01_rst_mig_7series_0_83M_0_synth_1: C:/Vivado/projects/CSCI460/arty_linux.runs/arty_microblaze_01_rst_mig_7series_0_83M_0_synth_1/runme.log
-arty_microblaze_01_mig_7series_0_0_synth_1: C:/Vivado/projects/CSCI460/arty_linux.runs/arty_microblaze_01_mig_7series_0_0_synth_1/runme.log
-arty_microblaze_01_auto_pc_3_synth_1: C:/Vivado/projects/CSCI460/arty_linux.runs/arty_microblaze_01_auto_pc_3_synth_1/runme.log
-arty_microblaze_01_auto_ds_4_synth_1: C:/Vivado/projects/CSCI460/arty_linux.runs/arty_microblaze_01_auto_ds_4_synth_1/runme.log
-arty_microblaze_01_auto_pc_7_synth_1: C:/Vivado/projects/CSCI460/arty_linux.runs/arty_microblaze_01_auto_pc_7_synth_1/runme.log
-arty_microblaze_01_auto_us_0_synth_1: C:/Vivado/projects/CSCI460/arty_linux.runs/arty_microblaze_01_auto_us_0_synth_1/runme.log
-arty_microblaze_01_auto_us_1_synth_1: C:/Vivado/projects/CSCI460/arty_linux.runs/arty_microblaze_01_auto_us_1_synth_1/runme.log
-arty_microblaze_01_auto_ds_5_synth_1: C:/Vivado/projects/CSCI460/arty_linux.runs/arty_microblaze_01_auto_ds_5_synth_1/runme.log
-arty_microblaze_01_auto_pc_5_synth_1: C:/Vivado/projects/CSCI460/arty_linux.runs/arty_microblaze_01_auto_pc_5_synth_1/runme.log
-arty_microblaze_01_auto_pc_4_synth_1: C:/Vivado/projects/CSCI460/arty_linux.runs/arty_microblaze_01_auto_pc_4_synth_1/runme.log
-arty_microblaze_01_auto_ds_2_synth_1: C:/Vivado/projects/CSCI460/arty_linux.runs/arty_microblaze_01_auto_ds_2_synth_1/runme.log
-arty_microblaze_01_auto_pc_2_synth_1: C:/Vivado/projects/CSCI460/arty_linux.runs/arty_microblaze_01_auto_pc_2_synth_1/runme.log
-arty_microblaze_01_auto_ds_3_synth_1: C:/Vivado/projects/CSCI460/arty_linux.runs/arty_microblaze_01_auto_ds_3_synth_1/runme.log
-arty_microblaze_01_auto_ds_1_synth_1: C:/Vivado/projects/CSCI460/arty_linux.runs/arty_microblaze_01_auto_ds_1_synth_1/runme.log
-arty_microblaze_01_auto_pc_1_synth_1: C:/Vivado/projects/CSCI460/arty_linux.runs/arty_microblaze_01_auto_pc_1_synth_1/runme.log
-arty_microblaze_01_auto_us_2_synth_1: C:/Vivado/projects/CSCI460/arty_linux.runs/arty_microblaze_01_auto_us_2_synth_1/runme.log
-arty_microblaze_01_auto_ds_0_synth_1: C:/Vivado/projects/CSCI460/arty_linux.runs/arty_microblaze_01_auto_ds_0_synth_1/runme.log
-arty_microblaze_01_auto_pc_0_synth_1: C:/Vivado/projects/CSCI460/arty_linux.runs/arty_microblaze_01_auto_pc_0_synth_1/runme.log
-arty_microblaze_01_auto_ds_6_synth_1: C:/Vivado/projects/CSCI460/arty_linux.runs/arty_microblaze_01_auto_ds_6_synth_1/runme.log
-arty_microblaze_01_microblaze_0_0_synth_1: C:/Vivado/projects/CSCI460/arty_linux.runs/arty_microblaze_01_microblaze_0_0_synth_1/runme.log
-arty_microblaze_01_auto_pc_6_synth_1: C:/Vivado/projects/CSCI460/arty_linux.runs/arty_microblaze_01_auto_pc_6_synth_1/runme.log
-arty_microblaze_01_lmb_bram_0_synth_1: C:/Vivado/projects/CSCI460/arty_linux.runs/arty_microblaze_01_lmb_bram_0_synth_1/runme.log
-arty_microblaze_01_microblaze_0_axi_intc_0_synth_1: C:/Vivado/projects/CSCI460/arty_linux.runs/arty_microblaze_01_microblaze_0_axi_intc_0_synth_1/runme.log
-arty_microblaze_01_clk_wiz_0_0_synth_1: C:/Vivado/projects/CSCI460/arty_linux.runs/arty_microblaze_01_clk_wiz_0_0_synth_1/runme.log
-synth_1: C:/Vivado/projects/CSCI460/arty_linux.runs/synth_1/runme.log
-[Wed Nov 20 21:59:36 2019] Launched impl_1...
-Run output will be captured here: C:/Vivado/projects/CSCI460/arty_linux.runs/impl_1/runme.log
-launch_runs: Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 2022.055 ; gain = 344.785
-open_hw_manager
-connect_hw_server -allow_non_jtag
-INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
-INFO: [Labtools 27-2222] Launching hw_server...
-INFO: [Labtools 27-2221] Launch Output:
-
-****** Xilinx hw_server v2019.2
-  **** Build date : Nov  6 2019 at 22:12:23
-    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
-
-
-INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
-INFO: [Labtools 27-3417] Launching cs_server...
-INFO: [Labtools 27-2221] Launch Output:
-
-
-****** Xilinx cs_server v2019.2.0
-  **** Build date : Nov 06 2019-22:28:22
-    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
-
-
-
-connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 2090.859 ; gain = 3.211
-open_hw_target
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210319755297A
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Vivado/projects/A7_Basys_Demo_01_LEDs/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-write_hw_platform -fixed -force  -include_bit -file C:/Vivado/projects/CSCI460/arty_microblaze_01_wrapper.xsa
-INFO: [Vivado 12-4895] Creating Hardware Platform: C:/Vivado/projects/CSCI460/arty_microblaze_01_wrapper.xsa ...
-INFO: [Hsi 55-2053] elapsed time for repository (C:/Xilinx/Vivado/2019.2/data\embeddedsw) loading 0 seconds
-WARNING: [Project 1-645] Board images not set in Hardware Platform.
-INFO: [Vivado 12-4896] Successfully created Hardware Platform: C:/Vivado/projects/CSCI460/arty_microblaze_01_wrapper.xsa
+open_bd_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1626.484 ; gain = 0.000
 INFO: [Vivado 12-8231] Launching Vitis
 INFO: [Vivado 12-417] Running vitis
 INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Vivado/projects/A7_Basys_Demo_01_LEDs/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
 exit
-INFO: [Common 17-206] Exiting Vivado at Wed Nov 20 22:37:06 2019...
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 21 22:14:21 2019...

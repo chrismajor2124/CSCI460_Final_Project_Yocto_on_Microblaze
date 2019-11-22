@@ -1,0 +1,6 @@
+21:18:47 **** Build of configuration Debug for project csci460_test_02_system_system ****
+make all 
+Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."
+
+21:18:47 Build Finished (took 124ms)
+
