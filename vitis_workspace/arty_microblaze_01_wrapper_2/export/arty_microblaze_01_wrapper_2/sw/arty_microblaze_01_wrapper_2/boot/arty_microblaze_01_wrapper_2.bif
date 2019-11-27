@@ -1,6 +1,0 @@
-/*arty_microblaze_01_wrapper_2*/
-the_ROM_image:
-{
-   <bitstream> 
-   <elf> 
-}

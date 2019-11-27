@@ -70,17 +70,17 @@ set rc [catch {
   set_property board_part digilentinc.com:arty-a7-35:part0:1.0 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Vivado/projects/CSCI460/arty_linux.cache/wt [current_project]
-  set_property parent.project_path C:/Vivado/projects/CSCI460/arty_linux.xpr [current_project]
-  set_property ip_output_repo C:/Vivado/projects/CSCI460/arty_linux.cache/ip [current_project]
+  set_property webtalk.parent_dir /home/teamradpc/Projects/CSCI460_Final/arty_linux.cache/wt [current_project]
+  set_property parent.project_path /home/teamradpc/Projects/CSCI460_Final/arty_linux.xpr [current_project]
+  set_property ip_output_repo /home/teamradpc/Projects/CSCI460_Final/arty_linux.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
-  add_files -quiet C:/Vivado/projects/CSCI460/arty_linux.runs/synth_1/arty_microblaze_01_wrapper.dcp
+  add_files -quiet /home/teamradpc/Projects/CSCI460_Final/arty_linux.runs/synth_1/arty_microblaze_01_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files C:/Vivado/projects/CSCI460/arty_linux.srcs/sources_1/bd/arty_microblaze_01/arty_microblaze_01.bd
+  add_files /home/teamradpc/Projects/CSCI460_Final/arty_linux.srcs/sources_1/bd/arty_microblaze_01/arty_microblaze_01.bd
   set_param project.isImplRun false
-  read_xdc C:/Vivado/projects/CSCI460/arty_linux.srcs/constrs_1/new/constraints_arty.xdc
+  read_xdc /home/teamradpc/Projects/CSCI460_Final/arty_linux.srcs/constrs_1/new/constraints_arty.xdc
   set_param project.isImplRun true
   link_design -top arty_microblaze_01_wrapper -part xc7a35ticsg324-1L
   set_param project.isImplRun false
