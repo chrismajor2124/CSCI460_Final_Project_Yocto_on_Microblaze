@@ -1,8 +1,8 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
---Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
---Date        : Wed Nov 20 21:58:55 2019
---Host        : Behemoth running 64-bit major release  (build 9200)
+--Tool Version: Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+--Date        : Mon Dec  2 18:00:41 2019
+--Host        : teamradpc-ubuntu-01 running 64-bit Ubuntu 18.04.3 LTS
 --Command     : generate_target arty_microblaze_01.bd
 --Design      : arty_microblaze_01
 --Purpose     : IP block netlist
@@ -7923,7 +7923,7 @@ architecture STRUCTURE of arty_microblaze_01 is
     s_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
     s_axi_rvalid : out STD_LOGIC;
     s_axi_rready : in STD_LOGIC;
-    intr : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    intr : in STD_LOGIC_VECTOR ( 5 downto 0 );
     processor_clk : in STD_LOGIC;
     processor_rst : in STD_LOGIC;
     irq : out STD_LOGIC;
@@ -7937,7 +7937,9 @@ architecture STRUCTURE of arty_microblaze_01 is
     In1 : in STD_LOGIC_VECTOR ( 0 to 0 );
     In2 : in STD_LOGIC_VECTOR ( 0 to 0 );
     In3 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    dout : out STD_LOGIC_VECTOR ( 3 downto 0 )
+    In4 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    In5 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    dout : out STD_LOGIC_VECTOR ( 5 downto 0 )
   );
   end component arty_microblaze_01_microblaze_0_xlconcat_0;
   component arty_microblaze_01_mdm_1_0 is
@@ -8070,6 +8072,7 @@ architecture STRUCTURE of arty_microblaze_01 is
     s_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
     s_axi_rvalid : out STD_LOGIC;
     s_axi_rready : in STD_LOGIC;
+    ip2intc_irpt : out STD_LOGIC;
     gpio_io_o : out STD_LOGIC_VECTOR ( 3 downto 0 );
     gpio2_io_i : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
@@ -8095,6 +8098,7 @@ architecture STRUCTURE of arty_microblaze_01 is
     s_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
     s_axi_rvalid : out STD_LOGIC;
     s_axi_rready : in STD_LOGIC;
+    ip2intc_irpt : out STD_LOGIC;
     gpio_io_o : out STD_LOGIC_VECTOR ( 11 downto 0 );
     gpio2_io_i : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
@@ -8172,8 +8176,10 @@ architecture STRUCTURE of arty_microblaze_01 is
   signal axi_ethernetlite_0_ip2intc_irpt : STD_LOGIC;
   signal axi_gpio_0_GPIO2_TRI_I : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal axi_gpio_0_GPIO_TRI_O : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal axi_gpio_0_ip2intc_irpt : STD_LOGIC;
   signal axi_gpio_1_GPIO2_TRI_I : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal axi_gpio_1_GPIO_TRI_O : STD_LOGIC_VECTOR ( 11 downto 0 );
+  signal axi_gpio_1_ip2intc_irpt : STD_LOGIC;
   signal axi_quad_spi_0_SPI_0_IO0_I : STD_LOGIC;
   signal axi_quad_spi_0_SPI_0_IO0_O : STD_LOGIC;
   signal axi_quad_spi_0_SPI_0_IO0_T : STD_LOGIC;
@@ -8456,7 +8462,7 @@ architecture STRUCTURE of arty_microblaze_01 is
   signal microblaze_0_interrupt_ACK : STD_LOGIC_VECTOR ( 0 to 1 );
   signal microblaze_0_interrupt_ADDRESS : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal microblaze_0_interrupt_INTERRUPT : STD_LOGIC;
-  signal microblaze_0_intr : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal microblaze_0_intr : STD_LOGIC_VECTOR ( 5 downto 0 );
   signal mig_7series_0_DDR3_ADDR : STD_LOGIC_VECTOR ( 13 downto 0 );
   signal mig_7series_0_DDR3_BA : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal mig_7series_0_DDR3_CAS_N : STD_LOGIC;
@@ -8664,6 +8670,7 @@ axi_gpio_0: component arty_microblaze_01_axi_gpio_0_0
      port map (
       gpio2_io_i(3 downto 0) => axi_gpio_0_GPIO2_TRI_I(3 downto 0),
       gpio_io_o(3 downto 0) => axi_gpio_0_GPIO_TRI_O(3 downto 0),
+      ip2intc_irpt => axi_gpio_0_ip2intc_irpt,
       s_axi_aclk => microblaze_0_Clk,
       s_axi_araddr(8 downto 0) => microblaze_0_axi_periph_M03_AXI_ARADDR(8 downto 0),
       s_axi_aresetn => rst_mig_7series_0_83M_peripheral_aresetn(0),
@@ -8688,6 +8695,7 @@ axi_gpio_1: component arty_microblaze_01_axi_gpio_1_0
      port map (
       gpio2_io_i(3 downto 0) => axi_gpio_1_GPIO2_TRI_I(3 downto 0),
       gpio_io_o(11 downto 0) => axi_gpio_1_GPIO_TRI_O(11 downto 0),
+      ip2intc_irpt => axi_gpio_1_ip2intc_irpt,
       s_axi_aclk => microblaze_0_Clk,
       s_axi_araddr(8 downto 0) => microblaze_0_axi_periph_M04_AXI_ARADDR(8 downto 0),
       s_axi_aresetn => rst_mig_7series_0_83M_peripheral_aresetn(0),
@@ -8989,7 +8997,7 @@ microblaze_0: component arty_microblaze_01_microblaze_0_0
 microblaze_0_axi_intc: component arty_microblaze_01_microblaze_0_axi_intc_0
      port map (
       interrupt_address(31 downto 0) => microblaze_0_interrupt_ADDRESS(31 downto 0),
-      intr(3 downto 0) => microblaze_0_intr(3 downto 0),
+      intr(5 downto 0) => microblaze_0_intr(5 downto 0),
       irq => microblaze_0_interrupt_INTERRUPT,
       processor_ack(1) => microblaze_0_interrupt_ACK(0),
       processor_ack(0) => microblaze_0_interrupt_ACK(1),
@@ -9295,7 +9303,9 @@ microblaze_0_xlconcat: component arty_microblaze_01_microblaze_0_xlconcat_0
       In1(0) => axi_quad_spi_0_ip2intc_irpt,
       In2(0) => axi_uartlite_0_interrupt,
       In3(0) => axi_timer_0_interrupt,
-      dout(3 downto 0) => microblaze_0_intr(3 downto 0)
+      In4(0) => axi_gpio_0_ip2intc_irpt,
+      In5(0) => axi_gpio_1_ip2intc_irpt,
+      dout(5 downto 0) => microblaze_0_intr(5 downto 0)
     );
 mig_7series_0: component arty_microblaze_01_mig_7series_0_0
      port map (

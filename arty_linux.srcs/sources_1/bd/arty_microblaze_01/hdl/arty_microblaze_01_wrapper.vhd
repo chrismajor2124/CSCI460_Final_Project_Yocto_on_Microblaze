@@ -1,8 +1,8 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
---Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
---Date        : Wed Nov 20 21:58:55 2019
---Host        : Behemoth running 64-bit major release  (build 9200)
+--Tool Version: Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+--Date        : Mon Dec  2 18:00:41 2019
+--Host        : teamradpc-ubuntu-01 running 64-bit Ubuntu 18.04.3 LTS
 --Command     : generate_target arty_microblaze_01_wrapper.bd
 --Design      : arty_microblaze_01_wrapper
 --Purpose     : IP block netlist
@@ -79,20 +79,8 @@ architecture STRUCTURE of arty_microblaze_01_wrapper is
     ddr3_sdram_cs_n : out STD_LOGIC_VECTOR ( 0 to 0 );
     ddr3_sdram_dm : out STD_LOGIC_VECTOR ( 1 downto 0 );
     ddr3_sdram_odt : out STD_LOGIC_VECTOR ( 0 to 0 );
-    eth_mii_col : in STD_LOGIC;
-    eth_mii_crs : in STD_LOGIC;
-    eth_mii_rst_n : out STD_LOGIC;
-    eth_mii_rx_clk : in STD_LOGIC;
-    eth_mii_rx_dv : in STD_LOGIC;
-    eth_mii_rx_er : in STD_LOGIC;
-    eth_mii_rxd : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    eth_mii_tx_clk : in STD_LOGIC;
-    eth_mii_tx_en : out STD_LOGIC;
-    eth_mii_txd : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    eth_mdio_mdc_mdc : out STD_LOGIC;
-    eth_mdio_mdc_mdio_i : in STD_LOGIC;
-    eth_mdio_mdc_mdio_o : out STD_LOGIC;
-    eth_mdio_mdc_mdio_t : out STD_LOGIC;
+    usb_uart_rxd : in STD_LOGIC;
+    usb_uart_txd : out STD_LOGIC;
     qspi_flash_io0_i : in STD_LOGIC;
     qspi_flash_io0_o : out STD_LOGIC;
     qspi_flash_io0_t : out STD_LOGIC;
@@ -112,11 +100,23 @@ architecture STRUCTURE of arty_microblaze_01_wrapper is
     qspi_flash_ss_o : out STD_LOGIC;
     qspi_flash_ss_t : out STD_LOGIC;
     led_4bits_tri_o : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    eth_mdio_mdc_mdc : out STD_LOGIC;
+    eth_mdio_mdc_mdio_i : in STD_LOGIC;
+    eth_mdio_mdc_mdio_o : out STD_LOGIC;
+    eth_mdio_mdc_mdio_t : out STD_LOGIC;
+    eth_mii_col : in STD_LOGIC;
+    eth_mii_crs : in STD_LOGIC;
+    eth_mii_rst_n : out STD_LOGIC;
+    eth_mii_rx_clk : in STD_LOGIC;
+    eth_mii_rx_dv : in STD_LOGIC;
+    eth_mii_rx_er : in STD_LOGIC;
+    eth_mii_rxd : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    eth_mii_tx_clk : in STD_LOGIC;
+    eth_mii_tx_en : out STD_LOGIC;
+    eth_mii_txd : out STD_LOGIC_VECTOR ( 3 downto 0 );
     push_buttons_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
     rgb_led_tri_o : out STD_LOGIC_VECTOR ( 11 downto 0 );
-    dip_switches_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    usb_uart_rxd : in STD_LOGIC;
-    usb_uart_txd : out STD_LOGIC
+    dip_switches_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
   end component arty_microblaze_01;
   component IOBUF is

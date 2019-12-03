@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/teamradpc/Projects/CSCI460_Final/arty_linux.runs/impl_1'
+HD_PWD='/home/teamradpc/Projects/CSCI_OS_Project/arty_linux.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

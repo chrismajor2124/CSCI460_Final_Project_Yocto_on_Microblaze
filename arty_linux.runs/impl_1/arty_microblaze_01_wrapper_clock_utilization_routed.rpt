@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------
 | Tool Version      : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-| Date              : Tue Nov 26 10:32:42 2019
+| Date              : Mon Dec  2 18:10:13 2019
 | Host              : teamradpc-ubuntu-01 running 64-bit Ubuntu 18.04.3 LTS
 | Command           : report_clock_utilization -file arty_microblaze_01_wrapper_clock_utilization_routed.rpt
 | Design            : arty_microblaze_01_wrapper
@@ -60,12 +60,12 @@ Table of Contents
 +-----------+-----------+-----------------+------------+----------------+--------------+-------------------+-------------+-----------------+--------------+----------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------+
 | Global Id | Source Id | Driver Type/Pin | Constraint | Site           | Clock Region | Load Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock                                                                | Driver Pin                                                                                                          | Net                                                                                                                 |
 +-----------+-----------+-----------------+------------+----------------+--------------+-------------------+-------------+-----------------+--------------+----------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------+
-| g0        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y0  | n/a          |                 6 |       17559 |               0 |       12.000 | clk_pll_i                                                            | arty_microblaze_01_i/mig_7series_0/u_arty_microblaze_01_mig_7series_0_0_mig/u_ddr3_infrastructure/u_bufg_clkdiv0/O  | arty_microblaze_01_i/mig_7series_0/u_arty_microblaze_01_mig_7series_0_0_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i_0 |
-| g1        | src1      | BUFG/O          | None       | BUFGCTRL_X0Y1  | n/a          |                 3 |         234 |               0 |       33.333 | arty_microblaze_01_i/mdm_1/U0/Use_E2.BSCAN_I/Use_E2.BSCANE2_I/DRCK   | arty_microblaze_01_i/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK/Using_FPGA.Native/O                                       | arty_microblaze_01_i/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK/Dbg_Clk_0                                                 |
+| g0        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y0  | n/a          |                 6 |       19837 |               0 |       12.000 | clk_pll_i                                                            | arty_microblaze_01_i/mig_7series_0/u_arty_microblaze_01_mig_7series_0_0_mig/u_ddr3_infrastructure/u_bufg_clkdiv0/O  | arty_microblaze_01_i/mig_7series_0/u_arty_microblaze_01_mig_7series_0_0_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i_0 |
+| g1        | src1      | BUFG/O          | None       | BUFGCTRL_X0Y1  | n/a          |                 3 |         235 |               0 |       33.333 | arty_microblaze_01_i/mdm_1/U0/Use_E2.BSCAN_I/Use_E2.BSCANE2_I/DRCK   | arty_microblaze_01_i/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK/Using_FPGA.Native/O                                       | arty_microblaze_01_i/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK/Dbg_Clk_0                                                 |
 | g2        | src2      | BUFG/O          | None       | BUFGCTRL_X0Y17 | n/a          |                 3 |          62 |               0 |        5.000 | clk_out2_arty_microblaze_01_clk_wiz_0_0                              | arty_microblaze_01_i/clk_wiz_0/inst/clkout2_buf/O                                                                   | arty_microblaze_01_i/clk_wiz_0/inst/clk_out2                                                                        |
 | g3        | src3      | BUFG/O          | None       | BUFGCTRL_X0Y18 | n/a          |                 2 |          59 |               1 |       40.000 | eth_mii_tx_clk                                                       | arty_microblaze_01_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.CLOCK_BUFG_TX/O                         | arty_microblaze_01_i/axi_ethernetlite_0/U0/phy_tx_clk_core                                                          |
 | g4        | src4      | BUFG/O          | None       | BUFGCTRL_X0Y16 | n/a          |                 2 |          57 |               0 |       40.000 | eth_mii_rx_clk                                                       | arty_microblaze_01_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.CLOCK_BUFG_RX/O                         | arty_microblaze_01_i/axi_ethernetlite_0/U0/phy_rx_clk_core                                                          |
-| g5        | src1      | BUFG/O          | None       | BUFGCTRL_X0Y2  | n/a          |                 2 |          39 |               1 |       33.333 | arty_microblaze_01_i/mdm_1/U0/Use_E2.BSCAN_I/Use_E2.BSCANE2_I/UPDATE | arty_microblaze_01_i/mdm_1/U0/Use_E2.BSCAN_I/Ext_JTAG_UPDATE_BUFG_inst/O                                            | arty_microblaze_01_i/mdm_1/U0/Use_E2.BSCAN_I/Ext_JTAG_UPDATE_BUFG                                                   |
+| g5        | src1      | BUFG/O          | None       | BUFGCTRL_X0Y2  | n/a          |                 3 |          39 |               1 |       33.333 | arty_microblaze_01_i/mdm_1/U0/Use_E2.BSCAN_I/Use_E2.BSCANE2_I/UPDATE | arty_microblaze_01_i/mdm_1/U0/Use_E2.BSCAN_I/Ext_JTAG_UPDATE_BUFG_inst/O                                            | arty_microblaze_01_i/mdm_1/U0/Use_E2.BSCAN_I/Ext_JTAG_UPDATE_BUFG                                                   |
 | g6        | src2      | BUFG/O          | None       | BUFGCTRL_X0Y19 | n/a          |                 1 |           1 |               0 |        6.000 | clk_out1_arty_microblaze_01_clk_wiz_0_0                              | arty_microblaze_01_i/clk_wiz_0/inst/clkout1_buf/O                                                                   | arty_microblaze_01_i/clk_wiz_0/inst/clk_out1                                                                        |
 | g7        | src2      | BUFG/O          | None       | BUFGCTRL_X0Y21 | n/a          |                 1 |           1 |               0 |       10.000 | clkfbout_arty_microblaze_01_clk_wiz_0_0                              | arty_microblaze_01_i/clk_wiz_0/inst/clkf_buf/O                                                                      | arty_microblaze_01_i/clk_wiz_0/inst/clkfbout_buf_arty_microblaze_01_clk_wiz_0_0                                     |
 | g8        | src5      | BUFH/O          | None       | BUFHCE_X1Y0    | X1Y0         |                 1 |           1 |               0 |       12.000 | pll_clk3_out                                                         | arty_microblaze_01_i/mig_7series_0/u_arty_microblaze_01_mig_7series_0_0_mig/u_ddr3_infrastructure/u_bufh_pll_clk3/O | arty_microblaze_01_i/mig_7series_0/u_arty_microblaze_01_mig_7series_0_0_mig/u_ddr3_infrastructure/pll_clk3          |
@@ -120,12 +120,12 @@ Table of Contents
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 | Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
-| X0Y0              |    5 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    4 |    50 |    1 |    50 | 3032 |  1200 | 1200 |   400 |    4 |    20 |    5 |    10 |    0 |    20 |
-| X1Y0              |    5 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    1 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    4 |    50 | 4018 |  1500 | 1087 |   450 |    0 |    40 |   17 |    20 |    0 |    20 |
-| X0Y1              |    7 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    6 |    50 |    5 |    50 | 3583 |  1200 | 1355 |   400 |    0 |    20 |    2 |    10 |    0 |    20 |
-| X1Y1              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 4145 |  1500 | 1319 |   450 |    0 |    40 |    2 |    20 |    0 |    20 |
-| X0Y2              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 1557 |  1800 |  420 |   400 |    0 |    20 |    0 |    10 |    0 |    20 |
-| X1Y2              |    2 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     4 |    0 |     1 |    0 |     0 |    0 |     0 |  582 |   950 |  163 |   300 |    0 |    10 |    0 |     5 |    0 |    20 |
+| X0Y0              |    5 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    4 |    50 |    1 |    50 | 3604 |  1200 | 1231 |   400 |    3 |    20 |    4 |    10 |    4 |    20 |
+| X1Y0              |    6 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    1 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    4 |    50 | 4522 |  1500 | 1221 |   450 |    1 |    40 |   17 |    20 |    0 |    20 |
+| X0Y1              |    7 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    6 |    50 |    5 |    50 | 3644 |  1200 | 1307 |   400 |    0 |    20 |    0 |    10 |    0 |    20 |
+| X1Y1              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 4125 |  1500 | 1383 |   450 |    0 |    40 |    6 |    20 |    0 |    20 |
+| X0Y2              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 2356 |  1800 |  634 |   400 |    0 |    20 |    0 |    10 |    0 |    20 |
+| X1Y2              |    2 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     4 |    0 |     1 |    0 |     0 |    0 |     0 |  875 |   950 |  311 |   300 |    0 |    10 |    0 |     5 |    0 |    20 |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 * Global Clock column represents track count; while other columns represents cell counts
 
@@ -139,7 +139,7 @@ All Modules
 +----+----+----+
 | Y2 |  1 |  2 |
 | Y1 |  7 |  2 |
-| Y0 |  5 |  5 |
+| Y0 |  5 |  6 |
 +----+----+----+
 
 
@@ -149,7 +149,7 @@ All Modules
 +-----------+-----------------+-------------------+-----------+-------------+---------------+-------------+----------+----------------+----------+---------------------------------------------------------------------------------------------------------------------+
 | Global Id | Driver Type/Pin | Driver Region (D) | Clock     | Period (ns) | Waveform (ns) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                                                                                 |
 +-----------+-----------------+-------------------+-----------+-------------+---------------+-------------+----------+----------------+----------+---------------------------------------------------------------------------------------------------------------------+
-| g0        | BUFG/O          | n/a               | clk_pll_i |      12.000 | {0.000 6.000} |       17221 |        0 |              1 |        0 | arty_microblaze_01_i/mig_7series_0/u_arty_microblaze_01_mig_7series_0_0_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i_0 |
+| g0        | BUFG/O          | n/a               | clk_pll_i |      12.000 | {0.000 6.000} |       19487 |        0 |              1 |        0 | arty_microblaze_01_i/mig_7series_0/u_arty_microblaze_01_mig_7series_0_0_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i_0 |
 +-----------+-----------------+-------------------+-----------+-------------+---------------+-------------+----------+----------------+----------+---------------------------------------------------------------------------------------------------------------------+
 * Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
 ** IO Loads column represents load cell count of IO types
@@ -160,9 +160,9 @@ All Modules
 +----+-------+-------+
 |    | X0    | X1    |
 +----+-------+-------+
-| Y2 |  1566 |   567 |
-| Y1 |  3563 |  4311 |
-| Y0 |  3034 |  4181 |
+| Y2 |  2377 |   869 |
+| Y1 |  3597 |  4330 |
+| Y0 |  3595 |  4720 |
 +----+-------+-------+
 
 
@@ -172,7 +172,7 @@ All Modules
 +-----------+-----------------+-------------------+--------------------------------------------------------------------+-------------+----------------+-------------+----------+----------------+----------+---------------------------------------------------------------------+
 | Global Id | Driver Type/Pin | Driver Region (D) | Clock                                                              | Period (ns) | Waveform (ns)  | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                                 |
 +-----------+-----------------+-------------------+--------------------------------------------------------------------+-------------+----------------+-------------+----------+----------------+----------+---------------------------------------------------------------------+
-| g1        | BUFG/O          | n/a               | arty_microblaze_01_i/mdm_1/U0/Use_E2.BSCAN_I/Use_E2.BSCANE2_I/DRCK |      33.333 | {0.000 16.667} |         234 |        0 |              0 |        0 | arty_microblaze_01_i/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK/Dbg_Clk_0 |
+| g1        | BUFG/O          | n/a               | arty_microblaze_01_i/mdm_1/U0/Use_E2.BSCAN_I/Use_E2.BSCANE2_I/DRCK |      33.333 | {0.000 16.667} |         235 |        0 |              0 |        0 | arty_microblaze_01_i/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK/Dbg_Clk_0 |
 +-----------+-----------------+-------------------+--------------------------------------------------------------------+-------------+----------------+-------------+----------+----------------+----------+---------------------------------------------------------------------+
 * Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
 ** IO Loads column represents load cell count of IO types
@@ -180,13 +180,13 @@ All Modules
 **** GT Loads column represents load cell count of GT types
 
 
-+----+------+-----+
-|    | X0   | X1  |
-+----+------+-----+
-| Y2 |    0 |   0 |
-| Y1 |   90 |   0 |
-| Y0 |  121 |  23 |
-+----+------+-----+
++----+-----+-----+
+|    | X0  | X1  |
++----+-----+-----+
+| Y2 |   0 |   0 |
+| Y1 |  89 |   0 |
+| Y0 |  83 |  63 |
++----+-----+-----+
 
 
 9. Device Cell Placement Summary for Global Clock g2
@@ -230,8 +230,8 @@ All Modules
 |    | X0  | X1 |
 +----+-----+----+
 | Y2 |   0 |  0 |
-| Y1 |  15 |  0 |
-| Y0 |  45 |  0 |
+| Y1 |   9 |  0 |
+| Y0 |  51 |  0 |
 +----+-----+----+
 
 
@@ -277,7 +277,7 @@ All Modules
 +----+-----+----+
 | Y2 |   0 |  0 |
 | Y1 |  29 |  0 |
-| Y0 |  11 |  0 |
+| Y0 |   6 |  5 |
 +----+-----+----+
 
 
@@ -379,11 +379,11 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+---------------------------------------------------------------------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                                                 |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+---------------------------------------------------------------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |        3034 |               0 | 2827 |    194 |    9 |   0 |  0 |    0 |   0 |       0 | arty_microblaze_01_i/mig_7series_0/u_arty_microblaze_01_mig_7series_0_0_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i_0 |
-| g1        | n/a   | BUFG/O          | None       |         121 |               0 |  104 |     17 |    0 |   0 |  0 |    0 |   0 |       0 | arty_microblaze_01_i/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK/Dbg_Clk_0                                                 |
-| g3        | n/a   | BUFG/O          | None       |          44 |               1 |   45 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | arty_microblaze_01_i/axi_ethernetlite_0/U0/phy_tx_clk_core                                                          |
+| g0        | n/a   | BUFG/O          | None       |        3595 |               0 | 3437 |    145 |    7 |   4 |  0 |    0 |   0 |       0 | arty_microblaze_01_i/mig_7series_0/u_arty_microblaze_01_mig_7series_0_0_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i_0 |
+| g1        | n/a   | BUFG/O          | None       |          83 |               0 |   65 |     18 |    0 |   0 |  0 |    0 |   0 |       0 | arty_microblaze_01_i/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK/Dbg_Clk_0                                                 |
+| g3        | n/a   | BUFG/O          | None       |          50 |               1 |   51 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | arty_microblaze_01_i/axi_ethernetlite_0/U0/phy_tx_clk_core                                                          |
 | g4        | n/a   | BUFG/O          | None       |          46 |               0 |   46 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | arty_microblaze_01_i/axi_ethernetlite_0/U0/phy_rx_clk_core                                                          |
-| g5        | n/a   | BUFG/O          | None       |          11 |               0 |   11 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | arty_microblaze_01_i/mdm_1/U0/Use_E2.BSCAN_I/Ext_JTAG_UPDATE_BUFG                                                   |
+| g5        | n/a   | BUFG/O          | None       |           6 |               0 |    6 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | arty_microblaze_01_i/mdm_1/U0/Use_E2.BSCAN_I/Ext_JTAG_UPDATE_BUFG                                                   |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+---------------------------------------------------------------------------------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
@@ -396,9 +396,10 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+---------------------------------------------------------------------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                                                 |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+---------------------------------------------------------------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |        4181 |               0 | 3995 |    139 |   17 |   0 |  0 |    1 |   0 |       0 | arty_microblaze_01_i/mig_7series_0/u_arty_microblaze_01_mig_7series_0_0_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i_0 |
-| g1        | n/a   | BUFG/O          | None       |          23 |               0 |   23 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | arty_microblaze_01_i/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK/Dbg_Clk_0                                                 |
+| g0        | n/a   | BUFG/O          | None       |        4720 |               0 | 4454 |    216 |   18 |   0 |  0 |    1 |   0 |       0 | arty_microblaze_01_i/mig_7series_0/u_arty_microblaze_01_mig_7series_0_0_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i_0 |
+| g1        | n/a   | BUFG/O          | None       |          63 |               0 |   63 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | arty_microblaze_01_i/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK/Dbg_Clk_0                                                 |
 | g2        | n/a   | BUFG/O          | None       |           1 |               0 |    0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | arty_microblaze_01_i/clk_wiz_0/inst/clk_out2                                                                        |
+| g5        | n/a   | BUFG/O          | None       |           5 |               0 |    5 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | arty_microblaze_01_i/mdm_1/U0/Use_E2.BSCAN_I/Ext_JTAG_UPDATE_BUFG                                                   |
 | g6        | n/a   | BUFG/O          | None       |           1 |               0 |    0 |      0 |    0 |   0 |  0 |    0 |   1 |       0 | arty_microblaze_01_i/clk_wiz_0/inst/clk_out1                                                                        |
 | g8        | n/a   | BUFH/O          | None       |           1 |               0 |    0 |      0 |    0 |   0 |  0 |    1 |   0 |       0 | arty_microblaze_01_i/mig_7series_0/u_arty_microblaze_01_mig_7series_0_0_mig/u_ddr3_infrastructure/pll_clk3          |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+---------------------------------------------------------------------------------------------------------------------+
@@ -413,10 +414,10 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+---------------------------------------------------------------------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                                                 |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+---------------------------------------------------------------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |        3563 |               0 | 3402 |    159 |    2 |   0 |  0 |    0 |   0 |       0 | arty_microblaze_01_i/mig_7series_0/u_arty_microblaze_01_mig_7series_0_0_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i_0 |
-| g1        | n/a   | BUFG/O          | None       |          90 |               0 |   83 |      7 |    0 |   0 |  0 |    0 |   0 |       0 | arty_microblaze_01_i/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK/Dbg_Clk_0                                                 |
+| g0        | n/a   | BUFG/O          | None       |        3597 |               0 | 3470 |    127 |    0 |   0 |  0 |    0 |   0 |       0 | arty_microblaze_01_i/mig_7series_0/u_arty_microblaze_01_mig_7series_0_0_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i_0 |
+| g1        | n/a   | BUFG/O          | None       |          89 |               0 |   82 |      7 |    0 |   0 |  0 |    0 |   0 |       0 | arty_microblaze_01_i/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK/Dbg_Clk_0                                                 |
 | g2        | n/a   | BUFG/O          | None       |          46 |               0 |   45 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | arty_microblaze_01_i/clk_wiz_0/inst/clk_out2                                                                        |
-| g3        | n/a   | BUFG/O          | None       |          15 |               0 |   15 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | arty_microblaze_01_i/axi_ethernetlite_0/U0/phy_tx_clk_core                                                          |
+| g3        | n/a   | BUFG/O          | None       |           9 |               0 |    9 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | arty_microblaze_01_i/axi_ethernetlite_0/U0/phy_tx_clk_core                                                          |
 | g4        | n/a   | BUFG/O          | None       |          10 |               0 |   10 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | arty_microblaze_01_i/axi_ethernetlite_0/U0/phy_rx_clk_core                                                          |
 | g5        | n/a   | BUFG/O          | None       |          28 |               1 |   28 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | arty_microblaze_01_i/mdm_1/U0/Use_E2.BSCAN_I/Ext_JTAG_UPDATE_BUFG                                                   |
 | g9        | n/a   | BUFG/O          | None       |           0 |               1 |    0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | arty_microblaze_01_i/clk_wiz_0/inst/clk_out3                                                                        |
@@ -432,7 +433,7 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+---------------------------------------------------------------------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                                                 |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+---------------------------------------------------------------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |        4311 |               0 | 4145 |    164 |    2 |   0 |  0 |    0 |   0 |       0 | arty_microblaze_01_i/mig_7series_0/u_arty_microblaze_01_mig_7series_0_0_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i_0 |
+| g0        | n/a   | BUFG/O          | None       |        4330 |               0 | 4125 |    199 |    6 |   0 |  0 |    0 |   0 |       0 | arty_microblaze_01_i/mig_7series_0/u_arty_microblaze_01_mig_7series_0_0_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i_0 |
 | g7        | n/a   | BUFG/O          | None       |           1 |               0 |    0 |      0 |    0 |   0 |  0 |    1 |   0 |       0 | arty_microblaze_01_i/clk_wiz_0/inst/clkfbout_buf_arty_microblaze_01_clk_wiz_0_0                                     |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+---------------------------------------------------------------------------------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
@@ -446,7 +447,7 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+---------------------------------------------------------------------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                                                 |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+---------------------------------------------------------------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |        1566 |               0 | 1557 |      8 |    0 |   0 |  0 |    0 |   0 |       0 | arty_microblaze_01_i/mig_7series_0/u_arty_microblaze_01_mig_7series_0_0_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i_0 |
+| g0        | n/a   | BUFG/O          | None       |        2377 |               0 | 2356 |     20 |    0 |   0 |  0 |    0 |   0 |       0 | arty_microblaze_01_i/mig_7series_0/u_arty_microblaze_01_mig_7series_0_0_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i_0 |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+---------------------------------------------------------------------------------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
@@ -459,7 +460,7 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+---------------------------------------------------------------------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                                                 |
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+---------------------------------------------------------------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |         567 |               0 | 567 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | arty_microblaze_01_i/mig_7series_0/u_arty_microblaze_01_mig_7series_0_0_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i_0 |
+| g0        | n/a   | BUFG/O          | None       |         869 |               0 | 860 |      9 |    0 |   0 |  0 |    0 |   0 |       0 | arty_microblaze_01_i/mig_7series_0/u_arty_microblaze_01_mig_7series_0_0_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i_0 |
 | g2        | n/a   | BUFG/O          | None       |          15 |               0 |  15 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | arty_microblaze_01_i/clk_wiz_0/inst/clk_out2                                                                        |
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+---------------------------------------------------------------------------------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
@@ -501,7 +502,7 @@ resize_pblock [get_pblocks {CLKAG_arty_microblaze_01_i/mig_7series_0/u_arty_micr
 #startgroup
 create_pblock {CLKAG_arty_microblaze_01_i/mdm_1/U0/Use_E2.BSCAN_I/Ext_JTAG_UPDATE_BUFG}
 add_cells_to_pblock [get_pblocks  {CLKAG_arty_microblaze_01_i/mdm_1/U0/Use_E2.BSCAN_I/Ext_JTAG_UPDATE_BUFG}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="arty_microblaze_01_i/mdm_1/U0/Use_E2.BSCAN_I/Ext_JTAG_UPDATE_BUFG"}]]]
-resize_pblock [get_pblocks {CLKAG_arty_microblaze_01_i/mdm_1/U0/Use_E2.BSCAN_I/Ext_JTAG_UPDATE_BUFG}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+resize_pblock [get_pblocks {CLKAG_arty_microblaze_01_i/mdm_1/U0/Use_E2.BSCAN_I/Ext_JTAG_UPDATE_BUFG}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
 #endgroup
 
 # Clock net "arty_microblaze_01_i/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK/Dbg_Clk_0" driven by instance "arty_microblaze_01_i/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK/Using_FPGA.Native" located at site "BUFGCTRL_X0Y1"

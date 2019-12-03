@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-// Date        : Wed Nov 20 22:03:17 2019
+// Date        : Wed Nov 20 22:03:16 2019
 // Host        : Behemoth running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               c:/Vivado/projects/CSCI460/arty_linux.srcs/sources_1/bd/arty_microblaze_01/ip/arty_microblaze_01_auto_us_0/arty_microblaze_01_auto_us_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top arty_microblaze_01_auto_us_0 -prefix
+//               arty_microblaze_01_auto_us_0_ arty_microblaze_01_auto_us_0_sim_netlist.v
 // Design      : arty_microblaze_01_auto_us_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -342,7 +342,6 @@ module arty_microblaze_01_auto_us_0
         .s_axi_wvalid(s_axi_wvalid));
 endmodule
 
-(* ORIG_REF_NAME = "axi_dwidth_converter_v2_1_20_a_upsizer" *) 
 module arty_microblaze_01_auto_us_0_axi_dwidth_converter_v2_1_20_a_upsizer
    (\USE_WRITE.wr_cmd_valid ,
     CO,
@@ -872,7 +871,6 @@ module arty_microblaze_01_auto_us_0_axi_dwidth_converter_v2_1_20_a_upsizer__para
         .R(\USE_FF_OUT.USE_RTL_OUTPUT_PIPELINE.M_VALID_Q_reg_0 ));
 endmodule
 
-(* ORIG_REF_NAME = "axi_dwidth_converter_v2_1_20_axi_upsizer" *) 
 module arty_microblaze_01_auto_us_0_axi_dwidth_converter_v2_1_20_axi_upsizer
    (\USE_REGISTER.M_AXI_WVALID_q_reg ,
     wrap_buffer_available_reg,
@@ -1534,7 +1532,6 @@ module arty_microblaze_01_auto_us_0_axi_dwidth_converter_v2_1_20_axi_upsizer
         .sr_awvalid(sr_awvalid));
 endmodule
 
-(* ORIG_REF_NAME = "axi_dwidth_converter_v2_1_20_r_upsizer" *) 
 module arty_microblaze_01_auto_us_0_axi_dwidth_converter_v2_1_20_r_upsizer
    (\USE_RTL_LENGTH.first_mi_word_q ,
     first_word,
@@ -3645,8 +3642,8 @@ endmodule
 (* C_RATIO = "0" *) (* C_RATIO_LOG = "0" *) (* C_SUPPORTS_ID = "0" *) 
 (* C_SYNCHRONIZER_STAGE = "3" *) (* C_S_AXI_ACLK_RATIO = "1" *) (* C_S_AXI_BYTES_LOG = "2" *) 
 (* C_S_AXI_DATA_WIDTH = "32" *) (* C_S_AXI_ID_WIDTH = "1" *) (* DowngradeIPIdentifiedWarnings = "yes" *) 
-(* ORIG_REF_NAME = "axi_dwidth_converter_v2_1_20_top" *) (* P_AXI3 = "1" *) (* P_AXI4 = "0" *) 
-(* P_AXILITE = "2" *) (* P_CONVERSION = "2" *) (* P_MAX_SPLIT_BEATS = "16" *) 
+(* P_AXI3 = "1" *) (* P_AXI4 = "0" *) (* P_AXILITE = "2" *) 
+(* P_CONVERSION = "2" *) (* P_MAX_SPLIT_BEATS = "16" *) 
 module arty_microblaze_01_auto_us_0_axi_dwidth_converter_v2_1_20_top
    (s_axi_aclk,
     s_axi_aresetn,
@@ -3930,7 +3927,6 @@ module arty_microblaze_01_auto_us_0_axi_dwidth_converter_v2_1_20_top
         .wrap_buffer_available_reg(s_axi_rlast));
 endmodule
 
-(* ORIG_REF_NAME = "axi_dwidth_converter_v2_1_20_w_upsizer" *) 
 module arty_microblaze_01_auto_us_0_axi_dwidth_converter_v2_1_20_w_upsizer
    (\USE_RTL_CURR_WORD.first_word_q ,
     s_axi_aresetn,
@@ -8056,7 +8052,6 @@ module arty_microblaze_01_auto_us_0_axi_dwidth_converter_v2_1_20_w_upsizer
         .R(s_axi_aresetn));
 endmodule
 
-(* ORIG_REF_NAME = "axi_register_slice_v2_1_20_axi_register_slice" *) 
 module arty_microblaze_01_auto_us_0_axi_register_slice_v2_1_20_axi_register_slice
    (mr_rvalid,
     s_ready_i_reg,
@@ -8384,7 +8379,6 @@ module arty_microblaze_01_auto_us_0_axi_register_slice_v2_1_20_axi_register_slic
         .sr_awvalid(sr_awvalid));
 endmodule
 
-(* ORIG_REF_NAME = "axi_register_slice_v2_1_20_axic_register_slice" *) 
 module arty_microblaze_01_auto_us_0_axi_register_slice_v2_1_20_axic_register_slice
    (\aresetn_d_reg[1]_0 ,
     sr_arvalid,
@@ -14448,7 +14442,6 @@ module arty_microblaze_01_auto_us_0_axi_register_slice_v2_1_20_axic_register_sli
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "generic_baseblocks_v2_1_0_command_fifo" *) 
 module arty_microblaze_01_auto_us_0_generic_baseblocks_v2_1_0_command_fifo
    (\USE_FF_OUT.USE_RTL_OUTPUT_PIPELINE.M_VALID_Q_reg_0 ,
     Q,
