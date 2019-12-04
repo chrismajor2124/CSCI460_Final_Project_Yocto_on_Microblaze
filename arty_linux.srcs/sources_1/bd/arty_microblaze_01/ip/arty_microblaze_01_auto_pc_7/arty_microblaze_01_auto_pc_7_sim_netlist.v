@@ -3,8 +3,8 @@
 // Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
 // Date        : Wed Nov 20 22:02:44 2019
 // Host        : Behemoth running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               c:/Vivado/projects/CSCI460/arty_linux.srcs/sources_1/bd/arty_microblaze_01/ip/arty_microblaze_01_auto_pc_7/arty_microblaze_01_auto_pc_7_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top arty_microblaze_01_auto_pc_7 -prefix
+//               arty_microblaze_01_auto_pc_7_ arty_microblaze_01_auto_pc_7_sim_netlist.v
 // Design      : arty_microblaze_01_auto_pc_7
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -322,10 +322,10 @@ endmodule
 (* C_AXI_RUSER_WIDTH = "1" *) (* C_AXI_SUPPORTS_READ = "1" *) (* C_AXI_SUPPORTS_USER_SIGNALS = "0" *) 
 (* C_AXI_SUPPORTS_WRITE = "1" *) (* C_AXI_WUSER_WIDTH = "1" *) (* C_FAMILY = "artix7" *) 
 (* C_IGNORE_ID = "1" *) (* C_M_AXI_PROTOCOL = "0" *) (* C_S_AXI_PROTOCOL = "2" *) 
-(* C_TRANSLATION_MODE = "2" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* ORIG_REF_NAME = "axi_protocol_converter_v2_1_20_axi_protocol_converter" *) 
-(* P_AXI3 = "1" *) (* P_AXI4 = "0" *) (* P_AXILITE = "2" *) 
-(* P_AXILITE_SIZE = "3'b010" *) (* P_CONVERSION = "2" *) (* P_DECERR = "2'b11" *) 
-(* P_INCR = "2'b01" *) (* P_PROTECTION = "1" *) (* P_SLVERR = "2'b10" *) 
+(* C_TRANSLATION_MODE = "2" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* P_AXI3 = "1" *) 
+(* P_AXI4 = "0" *) (* P_AXILITE = "2" *) (* P_AXILITE_SIZE = "3'b010" *) 
+(* P_CONVERSION = "2" *) (* P_DECERR = "2'b11" *) (* P_INCR = "2'b01" *) 
+(* P_PROTECTION = "1" *) (* P_SLVERR = "2'b10" *) 
 module arty_microblaze_01_auto_pc_7_axi_protocol_converter_v2_1_20_axi_protocol_converter
    (aclk,
     aresetn,

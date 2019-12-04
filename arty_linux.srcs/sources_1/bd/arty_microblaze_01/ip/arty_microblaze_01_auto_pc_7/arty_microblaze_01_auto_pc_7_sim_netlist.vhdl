@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
 -- Date        : Wed Nov 20 22:02:44 2019
 -- Host        : Behemoth running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               c:/Vivado/projects/CSCI460/arty_linux.srcs/sources_1/bd/arty_microblaze_01/ip/arty_microblaze_01_auto_pc_7/arty_microblaze_01_auto_pc_7_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top arty_microblaze_01_auto_pc_7 -prefix
+--               arty_microblaze_01_auto_pc_7_ arty_microblaze_01_auto_pc_7_sim_netlist.vhdl
 -- Design      : arty_microblaze_01_auto_pc_7
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -143,8 +143,6 @@ entity arty_microblaze_01_auto_pc_7_axi_protocol_converter_v2_1_20_axi_protocol_
   attribute C_TRANSLATION_MODE of arty_microblaze_01_auto_pc_7_axi_protocol_converter_v2_1_20_axi_protocol_converter : entity is 2;
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of arty_microblaze_01_auto_pc_7_axi_protocol_converter_v2_1_20_axi_protocol_converter : entity is "yes";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of arty_microblaze_01_auto_pc_7_axi_protocol_converter_v2_1_20_axi_protocol_converter : entity is "axi_protocol_converter_v2_1_20_axi_protocol_converter";
   attribute P_AXI3 : integer;
   attribute P_AXI3 of arty_microblaze_01_auto_pc_7_axi_protocol_converter_v2_1_20_axi_protocol_converter : entity is 1;
   attribute P_AXI4 : integer;
