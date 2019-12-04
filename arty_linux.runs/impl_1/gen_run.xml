@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35ticsg324-1L" LaunchTime="1575334875">
+<GenRun Id="impl_1" LaunchPart="xc7a35ticsg324-1L" LaunchTime="1575484016">
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="BG-DRC" Name="arty_microblaze_01_wrapper.drc"/>
   <File Type="BG-BGN" Name="arty_microblaze_01_wrapper.bgn"/>
@@ -132,12 +132,12 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="arty_microblaze_01_axi_gpio_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="arty_microblaze_01_clk_wiz_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="arty_microblaze_01_axi_gpio_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="arty_microblaze_01_axi_gpio_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="arty_microblaze_01_microblaze_0_axi_intc_0"/>
   <BlockFileSet Type="BlockSrcs" Name="arty_microblaze_01_lmb_bram_0"/>
   <BlockFileSet Type="BlockSrcs" Name="arty_microblaze_01_microblaze_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="arty_microblaze_01_rst_mig_7series_0_83M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="arty_microblaze_01_clk_wiz_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="arty_microblaze_01_xbar_0"/>
 </GenRun>
