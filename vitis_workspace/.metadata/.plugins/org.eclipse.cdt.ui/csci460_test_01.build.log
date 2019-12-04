@@ -1,26 +1,21 @@
-21:07:38 **** Build of configuration Debug for project csci460_test_01 ****
+14:44:49 **** Incremental Build of configuration Debug for project CSCI460_Test_01 ****
 make all 
-'Building file: ../src/helloworld.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -IC:/Vivado/projects/CSCI460/vitis_workspace/arty_microblaze_01_wrapper_1/export/arty_microblaze_01_wrapper_1/sw/arty_microblaze_01_wrapper_1/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-'Finished building: ../src/helloworld.c'
-' '
-'Building file: ../src/platform.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -IC:/Vivado/projects/CSCI460/vitis_workspace/arty_microblaze_01_wrapper_1/export/arty_microblaze_01_wrapper_1/sw/arty_microblaze_01_wrapper_1/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
-'Finished building: ../src/platform.c'
-' '
-'Building target: csci460_test_01.elf'
-'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Vivado/projects/CSCI460/vitis_workspace/arty_microblaze_01_wrapper_1/export/arty_microblaze_01_wrapper_1/sw/arty_microblaze_01_wrapper_1/standalone_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "csci460_test_01.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: csci460_test_01.elf'
-' '
-'Invoking: MicroBlaze Print Size'
-mb-size csci460_test_01.elf  |tee "csci460_test_01.elf.size"
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I/home/teamradpc/Projects/CSCI460_Final/vitis_workspace/arty_microblaze_01_wrapper/export/arty_microblaze_01_wrapper/sw/arty_microblaze_01_wrapper/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: CSCI460_Test_01.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L/home/teamradpc/Projects/CSCI460_Final/vitis_workspace/arty_microblaze_01_wrapper/export/arty_microblaze_01_wrapper/sw/arty_microblaze_01_wrapper/standalone_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "CSCI460_Test_01.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: CSCI460_Test_01.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size CSCI460_Test_01.elf  |tee "CSCI460_Test_01.elf.size"
    text	   data	    bss	    dec	    hex	filename
-   3180	    336	   3108	   6624	   19e0	csci460_test_01.elf
-'Finished building: csci460_test_01.elf.size'
-' '
+   2764	    336	   3108	   6208	   1840	CSCI460_Test_01.elf
+Finished building: CSCI460_Test_01.elf.size
+ 
 
-21:07:39 Build Finished (took 1s.193ms)
+14:44:49 Build Finished (took 468ms)
 
