@@ -37,7 +37,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .init_design.begin.rst
+/bin/touch .write_bitstream.begin.rst
 EAStep vivado -log arty_microblaze_01_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source arty_microblaze_01_wrapper.tcl -notrace
 
 

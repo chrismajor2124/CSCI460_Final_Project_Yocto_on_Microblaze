@@ -68,14 +68,17 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="arty_microblaze_01.bd" FileRelPathName="ip/arty_microblaze_01_axi_gpio_1_0/arty_microblaze_01_axi_gpio_1_0.xci">
-          <Proxy FileSetName="arty_microblaze_01_axi_gpio_1_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="arty_microblaze_01.bd" FileRelPathName="ip/arty_microblaze_01_axi_gpio_0_0/arty_microblaze_01_axi_gpio_0_0.xci">
-          <Proxy FileSetName="arty_microblaze_01_axi_gpio_0_0"/>
+        <CompFileExtendedInfo CompFileName="arty_microblaze_01.bd" FileRelPathName="ip/arty_microblaze_01_microblaze_0_axi_intc_0/arty_microblaze_01_microblaze_0_axi_intc_0.xci">
+          <Proxy FileSetName="arty_microblaze_01_microblaze_0_axi_intc_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="arty_microblaze_01.bd" FileRelPathName="ip/arty_microblaze_01_rst_mig_7series_0_83M_0/arty_microblaze_01_rst_mig_7series_0_83M_0.xci">
           <Proxy FileSetName="arty_microblaze_01_rst_mig_7series_0_83M_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="arty_microblaze_01.bd" FileRelPathName="ip/arty_microblaze_01_xbar_0/arty_microblaze_01_xbar_0.xci">
+          <Proxy FileSetName="arty_microblaze_01_xbar_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="arty_microblaze_01.bd" FileRelPathName="ip/arty_microblaze_01_lmb_bram_0/arty_microblaze_01_lmb_bram_0.xci">
+          <Proxy FileSetName="arty_microblaze_01_lmb_bram_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="arty_microblaze_01.bd" FileRelPathName="ip/arty_microblaze_01_clk_wiz_0_0/arty_microblaze_01_clk_wiz_0_0.xci">
           <Proxy FileSetName="arty_microblaze_01_clk_wiz_0_0"/>
@@ -83,14 +86,11 @@
         <CompFileExtendedInfo CompFileName="arty_microblaze_01.bd" FileRelPathName="ip/arty_microblaze_01_microblaze_0_0/arty_microblaze_01_microblaze_0_0.xci">
           <Proxy FileSetName="arty_microblaze_01_microblaze_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="arty_microblaze_01.bd" FileRelPathName="ip/arty_microblaze_01_xbar_0/arty_microblaze_01_xbar_0.xci">
-          <Proxy FileSetName="arty_microblaze_01_xbar_0"/>
+        <CompFileExtendedInfo CompFileName="arty_microblaze_01.bd" FileRelPathName="ip/arty_microblaze_01_axi_gpio_0_0/arty_microblaze_01_axi_gpio_0_0.xci">
+          <Proxy FileSetName="arty_microblaze_01_axi_gpio_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="arty_microblaze_01.bd" FileRelPathName="ip/arty_microblaze_01_microblaze_0_axi_intc_0/arty_microblaze_01_microblaze_0_axi_intc_0.xci">
-          <Proxy FileSetName="arty_microblaze_01_microblaze_0_axi_intc_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="arty_microblaze_01.bd" FileRelPathName="ip/arty_microblaze_01_lmb_bram_0/arty_microblaze_01_lmb_bram_0.xci">
-          <Proxy FileSetName="arty_microblaze_01_lmb_bram_0"/>
+        <CompFileExtendedInfo CompFileName="arty_microblaze_01.bd" FileRelPathName="ip/arty_microblaze_01_axi_gpio_1_0/arty_microblaze_01_axi_gpio_1_0.xci">
+          <Proxy FileSetName="arty_microblaze_01_axi_gpio_1_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/arty_microblaze_01/hdl/arty_microblaze_01_wrapper.vhd">
@@ -288,9 +288,7 @@
     </Run>
     <Run Id="arty_microblaze_01_axi_gpio_1_0_synth_1" Type="Ft3:Synth" SrcSet="arty_microblaze_01_axi_gpio_1_0" Part="xc7a35ticsg324-1L" ConstrsSet="arty_microblaze_01_axi_gpio_1_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/arty_microblaze_01_axi_gpio_1_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -300,9 +298,7 @@
     </Run>
     <Run Id="arty_microblaze_01_axi_gpio_0_0_synth_1" Type="Ft3:Synth" SrcSet="arty_microblaze_01_axi_gpio_0_0" Part="xc7a35ticsg324-1L" ConstrsSet="arty_microblaze_01_axi_gpio_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/arty_microblaze_01_axi_gpio_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -432,9 +428,7 @@
     </Run>
     <Run Id="arty_microblaze_01_axi_gpio_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35ticsg324-1L" ConstrsSet="arty_microblaze_01_axi_gpio_1_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="arty_microblaze_01_axi_gpio_1_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -451,9 +445,7 @@
     </Run>
     <Run Id="arty_microblaze_01_axi_gpio_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35ticsg324-1L" ConstrsSet="arty_microblaze_01_axi_gpio_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="arty_microblaze_01_axi_gpio_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

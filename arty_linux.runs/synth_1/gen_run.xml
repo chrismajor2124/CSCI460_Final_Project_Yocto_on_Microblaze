@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a35ticsg324-1L" LaunchTime="1575334873">
-  <File Type="VDS-TIMINGSUMMARY" Name="arty_microblaze_01_wrapper_timing_summary_synth.rpt"/>
+  <File Type="PA-TCL" Name="arty_microblaze_01_wrapper.tcl"/>
+  <File Type="REPORTS-TCL" Name="arty_microblaze_01_wrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="arty_microblaze_01_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="arty_microblaze_01_wrapper_utilization_synth.rpt"/>
   <File Type="RDS-DCP" Name="arty_microblaze_01_wrapper.dcp"/>
   <File Type="RDS-UTIL-PB" Name="arty_microblaze_01_wrapper_utilization_synth.pb"/>
-  <File Type="RDS-UTIL" Name="arty_microblaze_01_wrapper_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="arty_microblaze_01_wrapper_drc_synth.rpt"/>
-  <File Type="RDS-RDS" Name="arty_microblaze_01_wrapper.vds"/>
-  <File Type="REPORTS-TCL" Name="arty_microblaze_01_wrapper_reports.tcl"/>
-  <File Type="VDS-TIMING-PB" Name="arty_microblaze_01_wrapper_timing_summary_synth.pb"/>
-  <File Type="PA-TCL" Name="arty_microblaze_01_wrapper.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/bd/arty_microblaze_01/arty_microblaze_01.bd">
@@ -58,12 +55,12 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="arty_microblaze_01_axi_gpio_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="arty_microblaze_01_clk_wiz_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="arty_microblaze_01_axi_gpio_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="arty_microblaze_01_microblaze_0_axi_intc_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="arty_microblaze_01_lmb_bram_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="arty_microblaze_01_microblaze_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="arty_microblaze_01_rst_mig_7series_0_83M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="arty_microblaze_01_microblaze_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="arty_microblaze_01_lmb_bram_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="arty_microblaze_01_axi_gpio_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="arty_microblaze_01_axi_gpio_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="arty_microblaze_01_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="arty_microblaze_01_clk_wiz_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="arty_microblaze_01_microblaze_0_axi_intc_0"/>
 </GenRun>
