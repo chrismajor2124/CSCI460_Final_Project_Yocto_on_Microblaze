@@ -1,0 +1,17 @@
+\begin{thebibliography}{1}
+
+\bibitem{arty_board}
+Digilent, ``Arty fpga board reference manual.''
+  https://reference.digilentinc.com/_media/reference/programmable-logic/arty/arty_rm.pdf,
+  2019.
+
+\bibitem{microblaze}
+Xilinx, ``Microblaze soft processor core.''
+  https://www.xilinx.com/products/design-tools/microblaze.html, 2019.
+
+\bibitem{petalinux-docs}
+Xilinx, ``Petalinux tools documentation: Reference guide (ug1144).''
+  https://www.xilinx.com/support/documentation/sw_manuals/xilinx2019_2/ug1144-petalinux-tools-reference-guide.pdf,
+  2019.
+
+\end{thebibliography}

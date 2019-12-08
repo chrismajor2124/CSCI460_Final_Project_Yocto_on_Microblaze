@@ -1,0 +1,46 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+
+\title{CSCI 460 OS Final Project}
+\author{Chris Major}
+\date{Fall 2019}
+
+\begin{document}
+
+\maketitle
+
+% INTRODUCTION
+\section{Introduction}
+The implementation of an operating system (OS) on a computational device requires careful consideration of the links between the system hardware and the OS software. In digital systems using field programmable gate arrays (FPGA), the ability to adapt the hardware to meet specific design requirements makes this linkage far simpler to attain. Additionally, there are a number of tools available to digital designers to make the implementation of an OS onto FPGA fabric fairly efficient.\par
+The purpose of this document is to document the implementation of a Linux distribution onto a Microblaze soft-core processor, run on a Xilinx Artix-7 FPGA. This is to serve as a final project for meeting the course requirements of the CSCI 460 Operating Systems course at Montana State University. The process demonstrates a basic understanding of the hardware and software interfaces of an operating system applied to a single-processor hardware design. A detailed explanation of each step in the workflow is provided, with an analysis on capabilities and areas for future development.\par
+
+% HARDWARE REQUIREMENTS
+\section{Requirements}
+The most basic project requirement is to run Linux on an FPGA - as a proof of concept to meet the project conditions. Thus, the first task was to find development hardware that would support an OS, and to find a distribution of Linux that could be supported by an FPGA device.\par
+The board selected is an Arty-A7 board \cite{arty_board}, available from Digilent. It uses a Xilinx Artix-7 XC7A35T FPGA and hosts a variety of peripheral devices such as an Ethernet port, UART communication, SPI UART flash storage, DDR3L memory, and LED/button/switch GPIO. It can be programmed using the Vivado Design Suite and the Xilinx Vitis software design tool.\par
+The distribution of Linux selected is provided by Xilinx and Yocto, generated through a tool called PetaLinux. Version 2019.2 was used to generate a Linux image for the FPGA design as it is supported by Xilinx tools, has extensive documentation, and is recommended by developers for entry-level OS development on their FPGAs.\par
+Though the choice of a System-on-Chip (SoC) FPGA was initially considered, a softcore processor was ultimately chosen so as to exhibit the concept of a fully configurable hardware system. The softcore processor provided by Xilinx is the MicroBlaze \cite{microblaze}, which runs entirely within the FPGA fabric and does not exist on a separate ASIC chip. Thus, the Microblaze was chosen for the sake of highlighting the role of the FPGA hardware design in this project.\par 
+
+\subsection{Hardware Requirements}
+According to the Xilinx PetaLinux Tools Reference Guide \cite{petalinux-docs}, a Microblaze design capable of running Yocto Linux requires an external memory controller, non-volatile memory, a UART communications port with enabled interrupts, and a dual-channel timer. The inclusion of an Ethernet port with interrupts is recommended for network access.\par
+Thus, the board design for the Arty uses the DDR3L memory module, the QSPI flash memory module, the USB-to-UART port, and the AXI Timer - amongst other peripherals that serve as accessible GPIO devices and not necessarily OS-dependent components.\par
+
+\subsection{Software Requirements}
+The hardware design of the FPGA is created in Vivado and can be run on any supported Window or Linux machine. The Petalinux software design, however, can only be run on a handful of supported Linux machines. Ubuntu version 18.04 was used for developing the Yocto Linux software files.\par
+
+% DESIGN PROCESS
+
+
+% RESULTS AND FURTHER STUDY
+
+
+% CONCLUSION
+
+
+
+\bibliographystyle{ieeetr}
+\bibliography{sources}
+
+\end{document}
