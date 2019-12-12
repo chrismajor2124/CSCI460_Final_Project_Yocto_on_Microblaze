@@ -2,7 +2,7 @@
 
 \bibitem{arty_board}
 Digilent, ``Arty fpga board reference manual.''
-  https://reference.digilentinc.com/_media/reference/programmable-logic/arty/arty_rm.pdf,
+  https://reference.digilentinc.com/\_media/reference/programmable-logic/arty/arty\_rm.pdf,
   2019.
 
 \bibitem{microblaze}
@@ -11,7 +11,22 @@ Xilinx, ``Microblaze soft processor core.''
 
 \bibitem{petalinux-docs}
 Xilinx, ``Petalinux tools documentation: Reference guide (ug1144).''
-  https://www.xilinx.com/support/documentation/sw_manuals/xilinx2019_2/ug1144-petalinux-tools-reference-guide.pdf,
+  https://www.xilinx.com/support/documentation/sw\_manuals/xilinx2019\_2/ug1144-petalinux-tools-reference-guide.pdf,
+  2019.
+
+\bibitem{vitis}
+Xilinx, ``Vitis unified software platform.''
+  https://www.xilinx.com/products/design-tools/vitis.html, 2019.
+
+\bibitem{petalinux-command}
+Xilinx, ``Petalinux tools documentation: Command line reference guide
+  (ug1157).''
+  https://www.xilinx.com/support/documentation/sw\_manuals/xilinx2019\_2/ug1157-petalinux-tools-command-line-guide.pdf,
+  2019.
+
+\bibitem{pmods}
+Digilent, ``Pmod standard.''
+  https://reference.digilentinc.com/reference/pmod/specification?redirect=1,
   2019.
 
 \end{thebibliography}
